@@ -1,9 +1,13 @@
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import relationship
+from flask_bcrypt import Bcrypt
+from datetime import datetime
+
 
 db = SQLAlchemy()
 
 class User(db.Model):
+    __tablename__ = 'user'
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), unique=False, nullable=False)
     lastname = db.Column(db.String(100), unique=False, nullable=False)
@@ -12,7 +16,7 @@ class User(db.Model):
     email = db.Column(db.String(120), unique=True, nullable=False)
     password = db.Column(db.String(255), unique=False, nullable=False)
     user_calendar = relationship('Calendar', backref='user', lazy=True)
-    user_session = relationship('Session', backref='user', lazy=True)
+    user_session = relationship('SessionCall', backref='user', lazy=True)
 
     def __repr__(self):
         return f'<User {self.name}>'
@@ -89,16 +93,16 @@ class Calendar(db.Model):
             "psychologist_id": self.psychologist_id
         }
 
-class Session(db.Model):
+class SessionCall(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    introductory = db.Column(db.Integer, unique=True, nullable=False)
-    fullSession = db.Column(db.Integer, unique=True, nullable=False)
+    introductory = db.Column(db.Integer, unique=False, nullable=False)
+    fullSession = db.Column(db.Integer, unique=False, nullable=False)
     sessionPackage_5 = db.Column(db.Integer, unique=True, nullable=False)
     sessionPackage_10 = db.Column(db.Integer, unique=True, nullable=False)
-    usersession = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)  
+    user_session = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)  
 
     def __repr__(self):
-        return f'<Session {self.introductory}>'
+        return f'<Session {self.id}>'
     
     def serialize(self):
         return {
@@ -107,7 +111,7 @@ class Session(db.Model):
             "fullsession": self.fullSession,
             "sessionPackage_5": self.sessionPackage_5,
             "sessionPackage_10": self.sessionPackage_10,
-            "usersession": self.usersession
+            "usersession": self.user_session
         }
 
 class Chatbot(db.Model):
