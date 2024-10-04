@@ -14,7 +14,6 @@ class User(db.Model):
     gender = db.Column(db.Enum('male', 'female', 'none', name='gender_enum'), nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
     password = db.Column(db.String(255), nullable=False)
-    calendars = relationship('Calendar', backref='user', lazy=True)
     sessions = relationship('SessionCall', backref='user', lazy=True)
 
     def __repr__(self):
@@ -75,8 +74,7 @@ class Calendar(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     day = db.Column(db.Date, nullable=False)
     month = db.Column(db.Integer, nullable=False)  
-    hour = db.Column(db.Time, nullable=False)  
-    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)  
+    hour = db.Column(db.Time, nullable=False)   
     psychologist_id = db.Column(db.Integer, db.ForeignKey('psychologist.id'), nullable=False)  
     
     def __repr__(self):
