@@ -3,15 +3,25 @@ import { Link } from "react-router-dom";
 
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-light bg-light">
-			<div className="container">
-				<Link to="/">
-					<span className="navbar-brand mb-0 h1">React Boilerplate</span>
-				</Link>
-				<div className="ml-auto">
-					<Link to="/demo">
-						<button className="btn btn-primary">Check the Context in action</button>
-					</Link>
+		<nav className="navbar navbar-expand-lg navbar-light bg-light">
+			<div className="container-fluid">
+				<a className="navbar-brand" href="#">
+					<img src="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-mental-health-and-psychologist-png-image_10269115.png" 
+					alt="" width="40" height="44" />
+					Miguel Sa Psychology
+				</a>
+				<div className="collapse navbar-collapse d-flex flex-row justify-content-evenly" id="navbarNavAltMarkup">
+					<div className="navbar-nav">
+						<a className="nav-link active" aria-current="page" href="#">Home</a>
+						<a className="nav-link" href="#">Contact</a>
+					<form className="serch">
+						<button className="btn btn-outline-success" type="submit">Schedule a Session</button>
+					</form>
+					</div>
+					<div className= "d-flex">
+						<a className="nav-link active" aria-current="page" href="#">sign up</a>
+						<a className="nav-link" href="#">Login</a>
+					</div>
 				</div>
 			</div>
 		</nav>

@@ -28,10 +28,11 @@ def handle_hello():
 def login():
     body = request.json
     user = User.query.filter_by(email=body["email"]).first()
-    if not user:
+    if user and user.check_password(password=body["password"]):
+        access_token = create_access_token(identity=user.serialize())
+        return jsonify({"token": access_token})
+    else:
         return jsonify({"msg":"incorrect user or password"}), 401
-    access_token = create_access_token(identity=user.serialize())
-    return jsonify({"token": access_token})
 
 @api.route('/register', methods=['POST'])
 def register():
