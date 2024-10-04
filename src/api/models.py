@@ -2,9 +2,12 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import relationship
 from flask_bcrypt import Bcrypt
 from datetime import datetime
+from flask_bcrypt import Bcrypt
 
 
 db = SQLAlchemy()
+
+bcrypt = Bcrypt()
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -18,6 +21,26 @@ class User(db.Model):
 
     def __repr__(self):
         return f'<User {self.name}>'
+    
+    def generate_password(self, password):
+        return bcrypt.generate_password_hash(password)
+    
+    def check_password(self, password):
+        bcrypt.check_password_hash(self.password, password)
+    
+    def create_user(self, name, lastname, birth_date, gender, email, password):
+        hashed_password = self.generate_password(password).decode('utf-8')
+        new_user = User(
+            name = name,
+            lastname = lastname,
+            birth_date = birth_date,
+            gender = gender,
+            email = email,
+            password = hashed_password
+        )
+        db.session.add(new_user)
+        db.session.commit()
+        return new_user
 
     def serialize(self):
         return {
