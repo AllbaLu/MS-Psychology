@@ -13,6 +13,8 @@ export const Navbar = () => {
 				<div className="collapse navbar-collapse d-flex flex-row justify-content-evenly" id="navbarNavAltMarkup">
 					<div className="navbar-nav">
 						<a className="nav-link active" aria-current="page" href="#">Home</a>
+						<a className="nav-link active" aria-current="page" href="#">About</a>
+						<a className="nav-link active" aria-current="page" href="#">Interventions</a>
 						<a className="nav-link" href="#">Contact</a>
 					<form className="serch">
 						<button className="btn btn-outline-success" type="submit">Schedule a Session</button>
