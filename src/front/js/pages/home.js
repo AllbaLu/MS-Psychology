@@ -21,6 +21,9 @@ A professional practitioner or researcher involved in the discipline is called a
 
 Psychologists are involved in research on perception, cognition, attention, emotion, intelligence, subjective experiences, motivation, brain functioning, and personality. Psychologists' interests extend to interpersonal relationships, psychological resilience, family resilience, and other areas within social psychology. They also consider the unconscious mind.[5] Research psychologists employ empirical methods to infer causal and correlational relationships between psychosocial variables. Some, but not all, clinical and counseling psychologists rely on symbolic interpretation.
 			</p>
+
+			<h1 className="mb-3">Interventions</h1>
+			<Interventions />
 			<p>
 				<img src={rigoImageUrl} />
 			
