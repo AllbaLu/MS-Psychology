@@ -5,6 +5,7 @@ import "../../styles/home.css";
 import { RegisterUser } from "../component/RegisterUser";
 import { Login } from "../component/Login";
 import { Carrousel } from "../component/Carrousel";
+import { Interventions } from "../component/Interventions";
 
 export const Home = () => {
 	const { store, actions } = useContext(Context);
@@ -25,6 +26,7 @@ Psychologists are involved in research on perception, cognition, attention, emot
 			
 				
 			</p>
+			
 		</div>
 	);
 };
