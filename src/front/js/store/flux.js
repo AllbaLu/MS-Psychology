@@ -1,6 +1,9 @@
+import { Login } from "../component/Login";
+
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
+			token: null,
 			message: null,
 			demo: [
 				{
@@ -20,6 +23,49 @@ const getState = ({ getStore, getActions, setStore }) => {
 			exampleFunction: () => {
 				getActions().changeColor(0, "green");
 			},
+			tokenFromLocalStorage: () => {
+				const token = localStorage.getItem("token");
+				const user = JSON.parse(localStorage.getItem("user"));
+				if (token && token != "" && token != "undefined") setStore({token: token});
+				if (user) setStore({user: user});
+			},
+			
+			login: async (email, password) => {
+				try {
+					const response = await fetch("https://ominous-waffle-q7vvp4565gw524p5-3001.app.github.dev/api/login",{
+						method: 'POST',
+						headers: {
+							"Content-Type": "application/json"
+						},
+						body: JSON.stringify({
+							email,
+							password
+						})
+
+						
+					});
+
+					if (!response.ok) {
+						throw await response.JSON();
+						
+					}
+					const data = await response.JSON();
+					localStorage.setItem('token', data.token);
+					localStorage.setItem('user', JSON.stringify(user.data.id));
+					setStore({token: data.token, user: data.user});
+					return true
+
+				} catch (error) {
+					Swal.fire({
+						icon: "error",
+						title: "Oops...",
+						text: error.msg,
+					});
+					console.log('error fetch login', error);
+					
+				}
+			},
+
 
 			getMessage: async () => {
 				try{
@@ -45,7 +91,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				});
 
 				//reset the global store
-				setStore({ demo: demo });
+				setStore({ token:token });
 			}
 		}
 	};

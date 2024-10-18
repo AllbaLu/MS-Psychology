@@ -7,7 +7,8 @@ import { RegisterUser } from "../component/RegisterUser";
 
 
 export const LoginPage = () => {
-    const navigate = useNavigate("");
+    const navigate = useNavigate();
+    
 
     return(
         <div>

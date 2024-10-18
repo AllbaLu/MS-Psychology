@@ -12,7 +12,7 @@ export const Navbar = () => {
 		<nav className="navbar navbar-expand-lg navbar-light bg-light">
 			<div className="container-fluid">
 				
-				<a className="navbar-brand" href="https://www.linkedin.com/in/miguel-barros-de-s%C3%A1-a336a8a8/">
+				<a className="navbar-brand" href="#">
 					<img src="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-mental-health-and-psychologist-png-image_10269115.png" 
 					alt="" width="40" height="44" />
 					Miguel Sa Psychology
