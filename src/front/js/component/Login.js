@@ -1,12 +1,14 @@
-
 import React from "react";
 
 
 
 
 export const Login = () => {
+
+
     return(
-        <div className="container">
+
+        <div className="container mt-5">
         <form className="form-control login" >
             <div className="col-lg-6 mx-auto mb-3">
                 <label for="exampleInputEmail1" className="form-label"></label>
