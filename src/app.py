@@ -11,6 +11,9 @@ from api.routes import api
 from api.admin import setup_admin
 from api.commands import setup_commands
 from flask_jwt_extended import JWTManager
+from flask import Mail, Message
+import os
+from flask_cors import CORS
 
 # from models import Person
 
@@ -22,6 +25,19 @@ app.config["JWT_SECRET_KEY"] = "secret_key"
 app.url_map.strict_slashes = False
 jwt = JWTManager(app)
 
+app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+app.config['MAIL_PORT'] = 587
+app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USE_SSL'] = False
+app.config['MAIL_USERNAME'] = 'your_username'
+app.config['MAIL_PASSWORD'] = 'your_password'
+app.config['MAIL_DEFAULT_SENDER'] = 'your_email@example.com'
+
+#mail
+mail = Mail(app)
+
+
+CORS(app, origins=["https://ominous-space-succotash-7v77p5jwjx5q2x45w-3000.app.github.dev"])
 
 
 # database condiguration
@@ -46,6 +62,8 @@ setup_commands(app)
 app.register_blueprint(api, url_prefix='/api')
 
 # Handle/serialize errors like a JSON object
+
+
 
 
 @app.errorhandler(APIException)

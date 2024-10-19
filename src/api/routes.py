@@ -6,6 +6,10 @@ from api.models import db, User
 from api.utils import generate_sitemap, APIException
 from flask_cors import CORS
 from flask_jwt_extended import create_access_token, get_jwt_identity, jwt_required
+from flask_mail import Mail, Message
+import os
+
+
 
 
 api = Blueprint('api', __name__)
@@ -13,6 +17,8 @@ api = Blueprint('api', __name__)
 # Allow CORS requests to this API
 CORS(api)
 
+#mail
+mail = Mail(api)
 
 @api.route('/hello', methods=['POST', 'GET'])
 def handle_hello():
@@ -48,7 +54,31 @@ def register():
         )
     print(new_user)
 
-    return jsonify({"msg":"user created"})
+    return jsonify({"msg":"user created"}), 200
+
+@api.route('/send_email', methods=['POST'])
+def send_email():
+    body = request.get_json()
+
+    name = body['name']
+    email = body['email']
+    message = body['message']
+
+    msg = Message(subject=f"new message{name} ",
+                  sender=email,
+                  recipients=['miguelsapsychology@gmail.com']
+                  body= f"Name: {name}\Correo: {email}\Mensaje: {message}")
+    try:
+        mail.send(msg)
+        return jsonify({"status":"email send successfully"}),200
+    except Exception as e:
+        return jsonify({"status": f"Error al enviar el correo: {str(e)}"}),400
+    
+
+        
+
+
+
     
 
    

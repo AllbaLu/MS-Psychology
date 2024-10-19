@@ -20,26 +20,18 @@ export const Navbar = () => {
 				<div className="collapse navbar-collapse d-flex flex-row justify-content-evenly" id="navbarNavAltMarkup">
 					<div className="navbar-nav">
 						
-							<Link to="/">
-								<a className="nav-link active" aria-current="page" href="#">Home</a>
-							</Link>
-								<a className="nav-link active" aria-current="page" href="#">About</a>
+							<Link to="/">Home</Link>
+							<a className="nav-link active" aria-current="page" >About</a>
 
-							<Link to="/interventionsPage">
-								<a className="nav-link active" aria-current="page" >Interventions</a>
-							</Link>
-							<Link to="/contactForm">
-								<a className="nav-link" >Contact</a>
-							</Link>
+							<Link to="/interventionsPage">Interventions</Link>
+							<Link to="/contactForm">Contact</Link>
 					<form className="serch">
 						<button className="btn btn-outline-success" type="submit">Schedule a Session</button>
 					</form>
 					</div>
 					<div className= "d-flex">
 						<a className="nav-link active" aria-current="page" >sign up</a>
-						<Link to="/loginPage">
-							<a className="nav-link" >Login</a>
-						</Link>
+						<Link to="/loginPage">Login</Link>
 					</div>
 				</div>
 			</div>
