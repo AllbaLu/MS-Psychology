@@ -32,7 +32,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			
 			login: async (email, password) => {
 				try {
-					const response = await fetch("https://ominous-space-succotash-7v77p5jwjx5q2x45w-3001.app.github.dev/api/login",{
+					const response = await fetch("https://secret-spider-r477p65w5596hwpj4-3001.app.github.dev/api/login",{
 						method: 'POST',
 						headers: {
 							"Content-Type": "application/json"
