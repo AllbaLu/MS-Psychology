@@ -29,15 +29,15 @@ app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USE_SSL'] = False
-app.config['MAIL_USERNAME'] = 'your_username'
-app.config['MAIL_PASSWORD'] = 'your_password'
-app.config['MAIL_DEFAULT_SENDER'] = 'your_email@example.com'
+app.config['MAIL_USERNAME'] = 'miguelsapsychology@gmail.com'
+app.config['MAIL_PASSWORD'] = 'none'
+app.config['MAIL_DEFAULT_SENDER'] = 'none'
 
 #mail
 mail = Mail(app)
 
 
-CORS(app, origins=["https://ominous-space-succotash-7v77p5jwjx5q2x45w-3000.app.github.dev"])
+CORS(app, origins=["https://secret-spider-r477p65w5596hwpj4-3000.app.github.dev"])
 
 
 # database condiguration
@@ -89,6 +89,30 @@ def serve_any_other_file(path):
     response = send_from_directory(static_file_dir, path)
     response.cache_control.max_age = 0  # avoid cache memory
     return response
+
+@app.route('/send_email', methods=['POST'])
+def send_email():
+    body = request.get_json()
+
+    if not body or not all(k in body for k in ("name", "email", "message")):
+        return jsonify({"status": "Bad Request - Missing required fields"}), 400
+
+    name = body['name']
+    email = body['email']
+    message = body['message']
+
+    msg = Message(subject=f"New message from {name}",
+                  sender=email,
+                  recipients=['miguelsapsychology@gmail.com'],
+                  body=f"Name: {name}\nEmail: {email}\nMessage: {message}")
+    try:
+        email.send(msg)
+        return jsonify({"status": "Email sent successfully"}), 200
+    except Exception as e:
+        error_message = f"Error sending email:"
+        print(error_message)
+        return jsonify({"status": "Error sending email", "error": error_message}), 500
+
 
 
 # this only runs if `$ python src/main.py` is executed

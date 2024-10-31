@@ -7,7 +7,7 @@ from api.utils import generate_sitemap, APIException
 from flask_cors import CORS
 from flask_jwt_extended import create_access_token, get_jwt_identity, jwt_required
 # routes.py
-from flask_mail import Message  # Importar Message desde flask_mail
+from flask_mail import Mail, Message  # Importar Message desde flask_mail
 import os
 
 
@@ -59,6 +59,9 @@ def register():
 def send_email():
     body = request.get_json()
 
+    if not body or not all(k in body for k in ("name", "email", "message")):
+        return jsonify({"status": "Bad Request - Missing required fields"}), 400
+
     name = body['name']
     email = body['email']
     message = body['message']
@@ -68,10 +71,12 @@ def send_email():
                   recipients=['miguelsapsychology@gmail.com'],
                   body=f"Name: {name}\nEmail: {email}\nMessage: {message}")
     try:
-        mail.send(msg)
+        email.send(msg)
         return jsonify({"status": "Email sent successfully"}), 200
     except Exception as e:
-        return jsonify({"status": f"Error sending email: {str(e)}"}), 400
+        error_message = f"Error sending email:"
+        print(error_message)
+        return jsonify({"status": "Error sending email", "error": error_message}), 500
 
 
         

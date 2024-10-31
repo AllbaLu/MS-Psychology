@@ -10,6 +10,7 @@ export const ContactForm = () => {
         email:'',
         message:''
     });
+    const [statusMessage, setStatusMessage] = useState('');
 
     const handleEmail = (e) => {
         setFormData({
@@ -22,20 +23,28 @@ export const ContactForm = () => {
         e.preventDefault();
 
         try {
+            const response = await fetch("https://secret-spider-r477p65w5596hwpj4-3001.app.github.dev/api/send_email", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
             
-            const response = await fetch("https://ominous-space-succotash-7v77p5jwjx5q2x45w-3001.app.github.dev/api/send_email", formData)
-           
-            setStatusMessage(response.data.status);
+            
+            if (response.ok) {
+                const result = await response.json();
+                setStatusMessage(result.status); // Mensaje de éxito desde el servidor
+            } else {
+                
+                const errorData = await response.json();
+                setStatusMessage(errorData.status || 'Error al enviar el formulario'); // Mensaje de error específico o genérico
+            }
 
         } catch (error) {
-            if(error.response){
-                setStatusMessage(error.response.data.status)
-            }else{
-                setStatusMessage('Network or server connection error')
-            }
+            setStatusMessage('Network or server connection error');
         }
-        
-    }
+    };
     
 
     return(
