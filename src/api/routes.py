@@ -55,28 +55,28 @@ def register():
 
     return jsonify({"msg":"user created"}), 200
 
-@api.route('/send_email', methods=['POST'])
-def send_email():
-    body = request.get_json()
+# @api.route('/send_email', methods=['POST'])
+# def send_email():
+#     body = request.get_json()
 
-    if not body or not all(k in body for k in ("name", "email", "message")):
-        return jsonify({"status": "Bad Request - Missing required fields"}), 400
+#     if not body or not all(k in body for k in ("name", "email", "message")):
+#         return jsonify({"status": "Bad Request - Missing required fields"}), 400
 
-    name = body['name']
-    email = body['email']
-    message = body['message']
+#     name = body['name']
+#     email = body['email']
+#     message = body['message']
 
-    msg = Message(subject=f"New message from {name}",
-                  sender=email,
-                  recipients=['miguelsapsychology@gmail.com'],
-                  body=f"Name: {name}\nEmail: {email}\nMessage: {message}")
-    try:
-        email.send(msg)
-        return jsonify({"status": "Email sent successfully"}), 200
-    except Exception as e:
-        error_message = f"Error sending email:"
-        print(error_message)
-        return jsonify({"status": "Error sending email", "error": error_message}), 500
+#     msg = Message(subject=f"New message from {name}",
+#                   sender=email,
+#                   recipients=['miguelsapsychology@gmail.com'],
+#                   body=f"Name: {name}\nEmail: {email}\nMessage: {message}")
+#     try:
+#         email.send(msg)
+#         return jsonify({"status": "Email sent successfully"}), 200
+#     except Exception as e:
+#         error_message = f"Error sending email:"
+#         print(error_message)
+#         return jsonify({"status": "Error sending email", "error": error_message}), 500
 
 
         

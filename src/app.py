@@ -13,6 +13,7 @@ from api.commands import setup_commands
 from flask_jwt_extended import JWTManager
 from flask_mail import Mail, Message
 from flask_cors import CORS
+import os
 
 
 # from models import Person
@@ -30,14 +31,14 @@ app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USE_SSL'] = False
 app.config['MAIL_USERNAME'] = 'miguelsapsychology@gmail.com'
-app.config['MAIL_PASSWORD'] = 'none'
-app.config['MAIL_DEFAULT_SENDER'] = 'none'
+app.config['MAIL_PASSWORD'] = 'faui xzlr jsyc bdju'
+#app.config['MAIL_DEFAULT_SENDER'] = 'none'
 
 #mail
 mail = Mail(app)
 
 
-CORS(app, origins=["https://secret-spider-r477p65w5596hwpj4-3000.app.github.dev"])
+CORS(app)
 
 
 # database condiguration
@@ -106,7 +107,7 @@ def send_email():
                   recipients=['miguelsapsychology@gmail.com'],
                   body=f"Name: {name}\nEmail: {email}\nMessage: {message}")
     try:
-        email.send(msg)
+        mail.send(msg)
         return jsonify({"status": "Email sent successfully"}), 200
     except Exception as e:
         error_message = f"Error sending email:"
