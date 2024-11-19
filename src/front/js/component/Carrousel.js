@@ -11,10 +11,8 @@ export const Carrousel = () => {
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div className="carousel-inner">
+                
                 <div className="carousel-item active">
-                <img src="https://t4.ftcdn.net/jpg/02/52/22/05/360_F_252220513_94t7JK7iobqWb3UIdI4IRlD05eHVRB6R.jpg" className="d-block w-100 h-100" alt="..."/>
-                </div>
-                <div className="carousel-item">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Psychology.jpg/2560px-Psychology.jpg" className="d-block w-100 h-100" alt="..."/>
                 </div>
                 <div className="carousel-item">

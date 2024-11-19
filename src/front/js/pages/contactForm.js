@@ -50,6 +50,7 @@ export const ContactForm = () => {
                 const result = await response.json();
                 setStatusMessage(result.status); // Mensaje de éxito desde el servidor
                 navigate('/');
+                alert('sent successfully')
 
             } else {
 
@@ -67,7 +68,7 @@ export const ContactForm = () => {
         <div>
             <div className="container">
                 <div className="d-flex justify-content-center mt-5">
-                    <form onSubmit={handleSubmit} >
+                    <form onSubmit={handleSubmit}  >
                         <div>
                             <input
                                 type="text"

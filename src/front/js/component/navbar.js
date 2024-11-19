@@ -21,14 +21,15 @@ export const Navbar = () => {
 					<div className="navbar-nav mt-3 ">
 						<div className="mx-1"><Link to="/" className="btn btn-outline-dark">Home</Link></div>
 							
-							<a className="nav-link active mb-3" aria-current="page" >About</a>
+						<div className="mx-1"><Link to="/about" className="btn btn-outline-dark">About</Link></div>
 
 						<div className="mx-1"><Link to="/interventionsPage" className="btn btn-outline-dark">Interventions</Link></div>
 
 						<div className="mx-1" ><Link to="/contactForm" className="btn btn-outline-dark">Contact</Link></div>	
 							
 					<form className="serch">
-						<button className="btn btn-outline-success" type="submit">Schedule a Session</button>
+					<div className="mx-1" ><Link to="/scheduleSessions" className="btn btn-outline-dark">Schedule a Sessions</Link></div>	
+
 					</form>
 					</div>
 					{/* <div className= "d-flex">
