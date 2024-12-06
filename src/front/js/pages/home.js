@@ -14,7 +14,7 @@ export const Home = () => {
 
 	return (
 		<div className="text-center mt-5">
-			<Carrousel />
+			
 			<h1>Hello!!</h1>
 			<p>
 			Psychology is the scientific study of mind and behavior.[1][2] Its subject matter includes the behavior of humans and nonhumans, both conscious and unconscious phenomena, and mental processes such as thoughts, feelings, and motives. Psychology is an academic discipline of immense scope, crossing the boundaries between the natural and social sciences. Biological psychologists seek an understanding of the emergent properties of brains, linking the discipline to neuroscience. As social scientists, psychologists aim to understand the behavior of individuals and groups.[3][4]
