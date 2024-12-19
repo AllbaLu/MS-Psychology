@@ -19,16 +19,16 @@ export const Navbar = () => {
 				</a>
 				<div className="collapse navbar-collapse d-flex flex-row justify-content-evenly" id="navbarNavAltMarkup">
 					<div className="navbar-nav mt-3 ">
-						<div className="mx-1"><Link to="/" className="btn btn-outline-dark">Home</Link></div>
+						<div className="mx-1"><Link to="/" className="btn btn-outline">Home</Link></div>
 							
-						<div className="mx-1"><Link to="/about" className="btn btn-outline-dark">About</Link></div>
+						<div className="mx-1"><Link to="/about" className="btn btn-outline">About</Link></div>
 
-						<div className="mx-1"><Link to="/interventionsPage" className="btn btn-outline-dark">Interventions</Link></div>
+						<div className="mx-1"><Link to="/interventionsPage" className="btn btn-outline">Interventions</Link></div>
 
-						<div className="mx-1" ><Link to="/contactForm" className="btn btn-outline-dark">Contact</Link></div>	
+						<div className="mx-1" ><Link to="/contactForm" className="btn btn-outline">Contact</Link></div>	
 							
 					<form className="serch">
-					<div className="mx-1" ><Link to="/scheduleSessions" className="btn btn-outline-dark">Schedule a Sessions</Link></div>	
+					<div className="mx-1" ><Link to="/scheduleSessions" className="btn btn-outline">Schedule a Sessions</Link></div>	
 
 					</form>
 					</div>
