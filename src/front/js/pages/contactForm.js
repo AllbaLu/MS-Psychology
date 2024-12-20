@@ -67,7 +67,7 @@ export const ContactForm = () => {
     return (
         <div>
             <div className="container">
-                <div className="d-flex justify-content-center mt-5">
+                <div className=" form-control d-flex justify-content-center mt-5 ">
                     <form onSubmit={handleSubmit}  >
                         <div>
                             <input
@@ -78,6 +78,7 @@ export const ContactForm = () => {
                                 placeholder="Name"
                                 required
                                 className="form-control"
+                               
                             />
                         </div>
                         <div>

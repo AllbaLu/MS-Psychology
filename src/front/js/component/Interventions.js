@@ -4,11 +4,12 @@ import { useNavigate } from "react-router-dom";
 
 export const Interventions = () => {
     return (
-        <div className="container">
-            <div className="d-flex justify-content-center mt-5">
+        <div className="container bg-light">
+
+            <div className="d-flex justify-content-center mt-5 ">
                 <h1 className="mb-5">Interventions</h1>
             </div>
-            <div className="row row-cols-1 row-cols-md-3 g-4 mb-3">
+            <div className="row row-cols-1 row-cols-md-3 g-4 mb-5">
                 <div className="col">
                     <div className="card">
                         <img src="https://cgei-ud.org/images/psicosensum/products/producto_5006_.png" className="card-img-top" alt="..." />
@@ -37,7 +38,7 @@ export const Interventions = () => {
                     </div>
                 </div>
             </div>
-           
+
         </div>
     )
 }

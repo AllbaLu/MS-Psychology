@@ -5,7 +5,7 @@ import React from "react";
 export const About = () => {
     return (
 
-        <div>
+        <div className="container bg-light">
             <div className="card mb-3 mt-5" style={{ maxWidth: "540rem" }}>
                 <div className="row g-0">
                     <div className="col-md-4">
