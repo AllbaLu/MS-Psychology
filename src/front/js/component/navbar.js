@@ -9,17 +9,18 @@ export const Navbar = () => {
 		
 
 	return (
-		<nav className="navbar navbar-expand-lg navbar-light bg-light">
+		<nav className="navbar navbar-expand-sm bg-secondary navbar-dark">
 			<div className="container-fluid">
 				
 				<a className="navbar-brand" href="#">
 					<img src="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-mental-health-and-psychologist-png-image_10269115.png" 
 					alt="" width="40" height="44" />
-					Miguel Sa Psychology
+					Miguel Sá Psychology
 				</a>
 				<div className="collapse navbar-collapse d-flex flex-row justify-content-evenly" id="navbarNavAltMarkup">
-					<div className="navbar-nav mt-3 ">
-						<div className="mx-1"><Link to="/" className="btn btn-outline">Home</Link></div>
+					<div className="navbar-nav mt-1  ">
+						
+						<div className="mx-1 "><Link to="/" className="btn btn-outline"  >Home</Link></div>
 							
 						<div className="mx-1"><Link to="/about" className="btn btn-outline">About</Link></div>
 
