@@ -37,7 +37,7 @@ export const ContactForm = () => {
         e.preventDefault()
 
         try {
-            const response = await fetch("https://fluffy-space-yodel-5gvvxr7579rvcp6g5-3001.app.github.dev/send_email", {
+            const response = await fetch("https://upgraded-engine-jjrrq7p9pgvqfqgq9-3001.app.github.dev/send_email", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -66,8 +66,12 @@ export const ContactForm = () => {
 
     return (
         <div>
-            <div className="container">
-                <div className=" form-control d-flex justify-content-center mt-5 ">
+            <div className="container ">
+                <div className=" form-control d-flex justify-content-center mt-5 bg-transparent border-0 ">
+            <div className="g-4">
+                <img src="https://www.albertosoler.es/wp-content/uploads/2021/10/psicoterapia-online-videoconferencia.png"
+                style={{minWidth: "200px", height: "250px" }} />
+            </div>
                     <form onSubmit={handleSubmit}  >
                         <div>
                             <input
