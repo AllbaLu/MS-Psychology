@@ -54,3 +54,8 @@ def register():
     print(new_user)
 
     return jsonify({"msg":"user created"}), 200
+
+#prueba pasarela de pago 
+#@api.route('/create-payment', methods=['POST'])
+#def create_payment():
+

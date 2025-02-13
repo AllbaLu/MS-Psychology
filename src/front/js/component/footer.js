@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const Linkdn = () => {
 	window.open("https://www.linkedin.com/in/miguel-barros-de-s%C3%A1-a336a8a8")

@@ -2,18 +2,15 @@ import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 
 import "../../styles/home.css";
-import { RegisterUser } from "../component/RegisterUser";
-import { Login } from "../component/Login";
-import { Carrousel } from "../component/Carrousel";
-import { Interventions } from "../component/Interventions";
-import { Link } from "react-router-dom";
-import { InterventionsPage } from "../pages/interventionsPage";
+import PricingPage from "./pricingPage";
 
 export const Home = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
 		<div className="container">
+
+			
 
 			<div className="text-center mt-5 ">
 

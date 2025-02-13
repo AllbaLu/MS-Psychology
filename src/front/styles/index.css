@@ -55,3 +55,16 @@ footer {
     color: rgb(1, 1, 47);
   }
   
+  .dropdown-menu {
+    background-color: rgb(255, 255, 255) !important;
+   
+  }
+  
+  .dropdown-item {
+    color: black !important; 
+    
+  }
+  
+  .dropdown-item:hover {
+    background-color: #b6b6b6;
+  }

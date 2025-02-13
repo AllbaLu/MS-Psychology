@@ -28,10 +28,30 @@ export const Navbar = () => {
 
 						<div className="mx-1" ><Link to="/contactForm" className="btn btn-outline">Contact</Link></div>	
 							
-					<form className="serch">
-					<div className="mx-1" ><Link to="/scheduleSessions" className="btn btn-outline">Schedule Sessions</Link></div>	
-
-					</form>
+					
+					{/* <div className="mx-1" ><Link to="/scheduleSessions" className="btn btn-outline">Schedule Sessions</Link></div>	 */}
+					<div className="dropdown">
+						<button
+							className="btn btn-outline-dark dropdown-toggle"
+							type="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+						>
+							Schedule Sessions
+						</button>
+						<ul className="dropdown-menu">
+							<li>
+							<Link  className=" dropdown-item visible-dropdown-item" to="/scheduleSessions">
+								Session 15 minutes
+							</Link>
+							</li>
+							<li>
+							<a className="dropdown-item visible-dropdown-item" href="#">
+								Full Session
+							</a>
+							</li>
+						</ul>
+						</div>
 					</div>
 					{/* <div className= "d-flex">
 						<a className="nav-link active" aria-current="page" >sign up</a>
