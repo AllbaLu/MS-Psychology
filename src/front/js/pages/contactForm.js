@@ -37,7 +37,7 @@ export const ContactForm = () => {
         e.preventDefault()
 
         try {
-            const response = await fetch("https://scaling-winner-jjrrq7p9p6vvhqgj5-3001.app.github.dev/send_email", {
+            const response = await fetch("https://turbo-train-5gvvxr7577qjc9vg-3001.app.github.dev/send_email", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
