@@ -35,7 +35,7 @@ export const Footer = () => (
 				</div>
 				<div className="col text-end mx-5  ">
 					<div className="align-self-center  mt-5">
-						<Link to={"/contactForm"} className="text-light stretched-link mx-5 ">Contact      </Link>
+						<Link to={"/contactForm"} className="text-light stretched-link mx-5 ">Contact </Link>
 					</div>
 					<div className="">
 						<Link to={"/scheduleSessions"} className="text-light stretched-link">Schedule a Session</Link>

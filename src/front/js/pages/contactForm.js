@@ -17,11 +17,11 @@ export const ContactForm = () => {
     const [statusMessage, setStatusMessage] = useState('');
     let isMounted = true;
 
-    
+
     useEffect(() => {
         isMounted = true;
         return () => {
-            
+
             isMounted = false;
         };
     }, []);
@@ -48,14 +48,14 @@ export const ContactForm = () => {
 
             if (response.ok) {
                 const result = await response.json();
-                setStatusMessage(result.status); 
+                setStatusMessage(result.status);
                 navigate('/');
                 alert('sent successfully')
 
             } else {
 
                 const errorData = await response.json();
-                setStatusMessage(errorData.status || 'Error al enviar el formulario'); 
+                setStatusMessage(errorData.status || 'Error al enviar el formulario');
             }
 
         } catch (error) {
@@ -67,49 +67,55 @@ export const ContactForm = () => {
     return (
         <div>
             <div className="container ">
-                <div className=" form-control d-flex justify-content-center mt-5 bg-transparent border-0 ">
-            <div className="g-4">
-                <img src="https://www.albertosoler.es/wp-content/uploads/2021/10/psicoterapia-online-videoconferencia.png"
-                style={{minWidth: "200px", height: "250px" }} />
-            </div>
-                    <form onSubmit={handleSubmit}  >
-                        <div>
-                            <input
-                                type="text"
-                                name="name"
-                                value={formData.name}
-                                onChange={handleEmail}
-                                placeholder="Full Name"
-                                required
-                                className="form-control"
-                               
-                            />
+                <div className="row d-flex">
+                        <div className="col-2 ">
+                            <img src="https://www.albertosoler.es/wp-content/uploads/2021/10/psicoterapia-online-videoconferencia.png"
+                                style={{ minWidth: "150px", height: "200px" }} />
                         </div>
-                        <div>
-                            <input
-                                type="email"
-                                name="email"
-                                value={formData.email}
-                                onChange={handleEmail}
-                                placeholder="Email"
-                                required
-                                className="form-control"
-                            />
+                    <div className="col col-md-8">
+                        <div className=" form-control d-flex  mt-5 bg-transparent border-0 ">
+                            <form onSubmit={handleSubmit}  >
+                                <div>
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        value={formData.name}
+                                        onChange={handleEmail}
+                                        placeholder="Full Name"
+                                        required
+                                        className="form-control"
+
+                                    />
+                                </div>
+                                <div>
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        value={formData.email}
+                                        onChange={handleEmail}
+                                        placeholder="Email"
+                                        required
+                                        className="form-control"
+                                    />
+                                </div>
+                                <div>
+                                    <textarea
+                                        name="message"
+                                        value={formData.message}
+                                        onChange={handleEmail}
+                                        placeholder="How can I help you?"
+                                        required
+                                        className="form-control"
+                                    />
+                                </div>
+                                <button type="submit" value="send" className="btn btn-outline-dark">Send</button>
+                            </form>
                         </div>
-                        <div>
-                            <textarea
-                                name="message"
-                                value={formData.message}
-                                onChange={handleEmail}
-                                placeholder="How can I help you?"
-                                required
-                                className="form-control"
-                            />
-                        </div>
-                        <button type="submit" value="send" className="btn btn-outline-dark">Send</button>
-                    </form>
+
+                    </div>
                 </div>
             </div>
+
 
             {/* Mostrar el mensaje de estado después de enviar el formulario */}
             {statusMessage && <p>{statusMessage}</p>}
