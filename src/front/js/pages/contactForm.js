@@ -17,11 +17,11 @@ export const ContactForm = () => {
     const [statusMessage, setStatusMessage] = useState('');
     let isMounted = true;
 
-    // Usa useEffect para actualizar el estado de montaje
+    
     useEffect(() => {
         isMounted = true;
         return () => {
-            // Cuando el componente se desmonte, cambia isMounted a false
+            
             isMounted = false;
         };
     }, []);
@@ -48,14 +48,14 @@ export const ContactForm = () => {
 
             if (response.ok) {
                 const result = await response.json();
-                setStatusMessage(result.status); // Mensaje de éxito desde el servidor
+                setStatusMessage(result.status); 
                 navigate('/');
                 alert('sent successfully')
 
             } else {
 
                 const errorData = await response.json();
-                setStatusMessage(errorData.status || 'Error al enviar el formulario'); // Mensaje de error específico o genérico
+                setStatusMessage(errorData.status || 'Error al enviar el formulario'); 
             }
 
         } catch (error) {
@@ -79,7 +79,7 @@ export const ContactForm = () => {
                                 name="name"
                                 value={formData.name}
                                 onChange={handleEmail}
-                                placeholder="Name"
+                                placeholder="Full Name"
                                 required
                                 className="form-control"
                                
@@ -101,12 +101,12 @@ export const ContactForm = () => {
                                 name="message"
                                 value={formData.message}
                                 onChange={handleEmail}
-                                placeholder="Message"
+                                placeholder="How can I help you?"
                                 required
                                 className="form-control"
                             />
                         </div>
-                        <button type="submit" value="send">Send</button>
+                        <button type="submit" value="send" className="btn btn-outline-dark">Send</button>
                     </form>
                 </div>
             </div>

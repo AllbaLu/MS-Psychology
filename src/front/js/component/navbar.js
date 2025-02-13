@@ -29,7 +29,7 @@ export const Navbar = () => {
 						<div className="mx-1" ><Link to="/contactForm" className="btn btn-outline">Contact</Link></div>	
 							
 					<form className="serch">
-					<div className="mx-1" ><Link to="/scheduleSessions" className="btn btn-outline">Schedule a Sessions</Link></div>	
+					<div className="mx-1" ><Link to="/scheduleSessions" className="btn btn-outline">Schedule Sessions</Link></div>	
 
 					</form>
 					</div>
