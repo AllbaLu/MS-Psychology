@@ -9,7 +9,7 @@ export const Navbar = () => {
 		
 
 	return (
-		<nav className="navbar navbar-expand-sm bg-secondary navbar-dark">
+		<nav className="navbar navbar-expand-sm bg-dark navbar-dark">
 			<div className="container-fluid">
 				
 				<a className="navbar-brand" href="#">
@@ -32,7 +32,7 @@ export const Navbar = () => {
 					{/* <div className="mx-1" ><Link to="/scheduleSessions" className="btn btn-outline">Schedule Sessions</Link></div>	 */}
 					<div className="dropdown">
 						<button
-							className="btn btn-outline-dark dropdown-toggle"
+							className="btn btn-outline-light dropdown-toggle"
 							type="button"
 							data-bs-toggle="dropdown"
 							aria-expanded="false"
@@ -46,9 +46,9 @@ export const Navbar = () => {
 							</Link>
 							</li>
 							<li>
-							<a className="dropdown-item visible-dropdown-item" href="#">
+							<Link  className=" dropdown-item visible-dropdown-item" to="/scheduleSessions">
 								Full Session
-							</a>
+							</Link>
 							</li>
 						</ul>
 						</div>

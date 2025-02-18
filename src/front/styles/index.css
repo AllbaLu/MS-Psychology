@@ -1,6 +1,21 @@
 /* 
     General Styles used on every website (Don't Repeat Yourself)
 */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+}
+navbar{
+  background-color: #222; /* Color oscuro elegante */
+  color: white;
+    
+}
 
 body{
     background: #E9EDF4
@@ -8,36 +23,28 @@ body{
      
 }
 
-html {
+/* html {
     
     min-height: 100%;
     position: relative;
-}
+} */
 body {
     margin: 0;
     margin-bottom: 50px;
     
 }
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 30px;
-   
-    margin-top: 50px;
-    
-}
+
 .form-control {
-    width: 450px;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  a:link {
-    color: white;
+  width: 450px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+a:link {
+  color: white;
   }
   
   /* visited link */
@@ -57,7 +64,7 @@ footer {
   
   .dropdown-menu {
     background-color: rgb(255, 255, 255) !important;
-   
+    
   }
   
   .dropdown-item {
@@ -68,3 +75,24 @@ footer {
   .dropdown-item:hover {
     background-color: #b6b6b6;
   }
+
+  /* footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 120px;
+      margin-top: 50px;
+  } */
+  footer {
+    background-color: #222; /* Color oscuro elegante */
+    color: white;
+    
+    padding: 15px;
+    font-size: 14px;
+  }
+   header {
+    background-color: #333;
+    color: white;
+    
+    padding: 20px;
+} 

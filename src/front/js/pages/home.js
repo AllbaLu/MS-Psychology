@@ -9,7 +9,7 @@ export const Home = () => {
 
 	return (
 		<div className="container">
-
+			
 			
 
 			<div className="text-center mt-5 ">
@@ -31,7 +31,7 @@ export const Home = () => {
 
 
 
-
+				<PricingPage />
 
 			</div>
 		</div>

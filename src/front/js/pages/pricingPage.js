@@ -4,11 +4,14 @@ export const PricingPage = () => {
 
   // Paste the stripe-pricing-table snippet in your React component
   return (
-    <stripe-pricing-table
-      pricing-table-id="prod_RlZUVPAabVpeDc"
-      publishable-key="pk_test_51Qs0L8Kvz8mCsIiIfcPB1BVfOo59PZTWH5RTrtKPRiGVXnmnXzuNNXBLhXd8fF6CRLc1Sh1tYpeGbxq7icBJo5iD00p7coxzhx"
-    >
-    </stripe-pricing-table>
+    <div className='container w-200 h-480'>
+
+      <stripe-pricing-table pricing-table-id="prctbl_1Qs2YsKvz8mCsIiILrDmw5zi"
+      publishable-key="pk_live_51Qs0L8Kvz8mCsIiIiR6qVuTOv8glHk4arblXoQ5ngPZ96J5naQGNFZRcPrasRVsY8CAdFzcw5Fa5Or5Rw03NrPts00gU6ymtq1">
+     
+      </stripe-pricing-table>
+    </div>
+   
   );
 }
 

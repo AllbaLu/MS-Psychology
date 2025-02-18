@@ -15,25 +15,25 @@ const Insta = () => {
 
 export const Footer = () => (
 
-	<footer className="footer  ">
-		<div className="container-fluid bg-secondary navbar-dark">
+	<footer className="footer   ">
+		<div className="container-fluid  navbar-dark">
 			<div className="row mx-4">
 				<div className="col">
-					<div className="text-light mt-3 ms-4">
+					<div className="text-light mt-3 ms-4 ">
 
 						<div><i className="fa-solid fa-user"> </i> MIGUEL SÁ</div>
 						<div><i className="fa-brands fa-square-whatsapp"> </i> (+351)918 079 311</div>
 						<div><i className="fa-solid fa-envelope"> </i> miguelsapsychology@gmail.com</div>
 						<div className="d-flex text-light mb-3 mx-2 ">
-							<button onClick={Linkdn} className="btn btn-outline-dark"><i className="fa-brands fa-linkedin"></i></button>
-							<button onClick={Youtbe} className="btn btn-outline-dark"><i className="fa-brands fa-square-youtube"></i></button>
-							<button onClick={Insta} className="btn btn-outline-dark"><i className="fa-brands fa-square-instagram"></i></button>
+							<button onClick={Linkdn} className="btn btn-outline-light"><i className="fa-brands fa-linkedin"></i></button>
+							<button onClick={Youtbe} className="btn btn-outline-light"><i className="fa-brands fa-square-youtube"></i></button>
+							<button onClick={Insta} className="btn btn-outline-light"><i className="fa-brands fa-square-instagram"></i></button>
 						</div>
 
 					</div>
 				</div>
-				<div className="col text-light align-self-center ">
-					<div className="text-center"><p>psychologist</p></div>
+				<div className="col  align-self-end ">
+					<div className="text-center"><p>&copy; 2025 - Todos los derechos reservados</p></div>
 				</div>
 				<div className="col text-end mx-5  ">
 					<div className="align-self-center  mt-5">
