@@ -9,30 +9,30 @@ export const Navbar = () => {
 		
 
 	return (
-		<nav className="navbar navbar-expand-sm bg-dark navbar-dark">
+		<nav className="navbar navbar-expand-sm  " >
 			<div className="container-fluid">
 				
-				<a className="navbar-brand" href="#">
+				<a className="navbar-brand text-dark" href="#">
 					<img src="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-mental-health-and-psychologist-png-image_10269115.png" 
 					alt="" width="40" height="44" />
 					Miguel Sá Psychology
 				</a>
 				<div className="collapse navbar-collapse d-flex flex-row justify-content-evenly" id="navbarNavAltMarkup">
-					<div className="navbar-nav mt-1  ">
+					<div className="navbar-nav mt-1 text-dark  ">
 						
-						<div className="mx-1 "><Link to="/" className="btn btn-outline"  >Home</Link></div>
+						<div className="mx-1 "><Link to="/" className="btn btn-info"  >Home</Link></div>
 							
-						<div className="mx-1"><Link to="/about" className="btn btn-outline">About</Link></div>
+						<div className="mx-1"><Link to="/about" className="btn btn-info">About</Link></div>
 
-						<div className="mx-1"><Link to="/interventionsPage" className="btn btn-outline">Interventions</Link></div>
+						<div className="mx-1"><Link to="/interventionsPage" className="btn btn-info">Interventions</Link></div>
 
-						<div className="mx-1" ><Link to="/contactForm" className="btn btn-outline">Contact</Link></div>	
+						<div className="mx-1" ><Link to="/contactForm" className="btn btn-info">Contact</Link></div>	
 							
 					
 					{/* <div className="mx-1" ><Link to="/scheduleSessions" className="btn btn-outline">Schedule Sessions</Link></div>	 */}
 					<div className="dropdown">
 						<button
-							className="btn btn-outline-light dropdown-toggle"
+							className="btn btn-info dropdown-toggle"
 							type="button"
 							data-bs-toggle="dropdown"
 							aria-expanded="false"
