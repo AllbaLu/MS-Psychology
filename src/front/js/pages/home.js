@@ -31,8 +31,7 @@ export const Home = () => {
 
 
 
-				<PricingPage />
-
+				
 			</div>
 		</div>
 	);

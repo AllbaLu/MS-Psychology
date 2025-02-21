@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-const openLink = (url) => {
-    window.open(url, "_blank", "noopener,noreferrer");
-};
+
 
 
 export const ContactForm = () => {
@@ -70,84 +68,67 @@ export const ContactForm = () => {
         <div>
             <div className="container ">
                 <div className="row d-flex">
-                    <div className="col-4 ">
+                    <div className="col col-lg-6">
                         <div className="mt-3 ms-4">
-                            <p><i className="fa-solid fa-user"></i> MIGUEL SÁ</p>
-                            <p><i className="fa-brands fa-square-whatsapp"></i> (+351) 918 079 311</p>
-                            <p><i className="fa-solid fa-envelope"></i> miguelsapsychology@gmail.com</p>
-                            <div className="d-flex gap-2 mt-2">
-                                <button
-                                    onClick={() => openLink("https://www.linkedin.com/in/miguel-barros-de-s%C3%A1-a336a8a8")}
-                                    className="btn btn-outline-dark"
-                                    aria-label="LinkedIn">
-                                    <i className="fa-brands fa-linkedin"></i>
-                                </button>
-                                <button
-                                    onClick={() => openLink("https://www.youtube.com/@miguelsapsychology")}
-                                    className="btn btn-outline-dark"
-                                    aria-label="YouTube">
-                                    <i className="fa-brands fa-square-youtube"></i>
-                                </button>
-                                <button
-                                    onClick={() => openLink("https://www.instagram.com/miguelsapsychology?igsh=MW91anhxYnVqNmtjaQ==")}
-                                    className="btn btn-outline-dark"
-                                    aria-label="Instagram">
-                                    <i className="fa-brands fa-square-instagram"></i>
-                                </button>
-                            </div>
 
-                            {/* <img src="https://www.albertosoler.es/wp-content/uploads/2021/10/psicoterapia-online-videoconferencia.png"
-                                style={{ minWidth: "150px", height: "200px" }} /> */}
-                        </div>
-                        <div className="col col-md-8">
-                            <div className=" form-control d-flex  mt-5 bg-transparent border-0 ">
-                                <form onSubmit={handleSubmit}  >
-                                    <div>
-                                        <input
-                                            type="text"
-                                            name="name"
-                                            value={formData.name}
-                                            onChange={handleEmail}
-                                            placeholder="Full Name"
-                                            required
-                                            className="form-control"
-
-                                        />
-                                    </div>
-                                    <div>
-                                        <input
-                                            type="email"
-                                            name="email"
-                                            value={formData.email}
-                                            onChange={handleEmail}
-                                            placeholder="Email"
-                                            required
-                                            className="form-control"
-                                        />
-                                    </div>
-                                    <div>
-                                        <textarea
-                                            name="message"
-                                            value={formData.message}
-                                            onChange={handleEmail}
-                                            placeholder="How can I help you?"
-                                            required
-                                            className="form-control"
-                                        />
-                                    </div>
-                                    <button type="submit" value="send" className="btn btn-outline-dark">Send</button>
-                                </form>
-                            </div>
-
+                            <img src="https://www.albertosoler.es/wp-content/uploads/2021/10/psicoterapia-online-videoconferencia.png"
+                                style={{ minWidth: "150px", height: "200px" }} />
                         </div>
                     </div>
-                </div>
 
+                    <div className="col col-lg-6">
+                        <div className=" form-control d-flex  mt-5 bg-transparent border-0 ">
+                            <form onSubmit={handleSubmit}  >
+                                <div>
+                                    Full Name
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        value={formData.name}
+                                        onChange={handleEmail}
+                                        // placeholder="Full Name"
+                                        required
+                                        className="form-control"
+                                    />
+                                </div>
+                                <div>
+                                    Email
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        value={formData.email}
+                                        onChange={handleEmail}
+                                        // placeholder="Email"
+                                        required
+                                        className="form-control"
+                                    />
+                                </div>
+                                <div>
+                                    How can I help you?
+                                    <textarea
+                                        name="message"
+                                        value={formData.message}
+                                        onChange={handleEmail}
+                                        // placeholder="How can I help you?"
+                                        required
+                                        className="form-control"
+                                    />
+                                </div>
+                                <button type="submit" value="send" className="btn btn-outline-info "
+                                >Send</button>
+                            </form>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
 
                 {/* Mostrar el mensaje de estado después de enviar el formulario */}
                 {statusMessage && <p>{statusMessage}</p>}
             </div>
         </div>
 
-            )
+    )
 }

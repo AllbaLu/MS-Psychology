@@ -20,13 +20,13 @@ export const Navbar = () => {
 				<div className="collapse navbar-collapse d-flex flex-row justify-content-evenly" id="navbarNavAltMarkup">
 					<div className="navbar-nav mt-1 text-dark  ">
 						
-						<div className="mx-1 "><Link to="/" className="btn btn-info"  >Home</Link></div>
+						<div className="mx-1 "><Link to="/" className="btn text-info"  >Home</Link></div>
 							
-						<div className="mx-1"><Link to="/about" className="btn btn-info">About</Link></div>
+						<div className="mx-1"><Link to="/about" className="btn text-info">About</Link></div>
 
-						<div className="mx-1"><Link to="/interventionsPage" className="btn btn-info">Interventions</Link></div>
+						<div className="mx-1"><Link to="/interventionsPage" className="btn text-info">Interventions</Link></div>
 
-						<div className="mx-1" ><Link to="/contactForm" className="btn btn-info">Contact</Link></div>	
+						<div className="mx-1" ><Link to="/contactForm" className="btn text-info">Contact</Link></div>	
 							
 					
 					{/* <div className="mx-1" ><Link to="/scheduleSessions" className="btn btn-outline">Schedule Sessions</Link></div>	 */}

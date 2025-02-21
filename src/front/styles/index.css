@@ -19,15 +19,15 @@ header {
 body {
   margin: 0;
   margin-bottom: 50px;
-  background: #f5f8fc  
+  background: #f7fbff  
 }
 
 .form-control {
-  width: 450px;
-  padding: 12px 20px;
+  width: 470px;
+  padding: 14px 22px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid #c1e7ff;
   border-radius: 4px;
   box-sizing: border-box;
 }
@@ -61,7 +61,7 @@ a:link {
   }
   
   .dropdown-item:hover {
-    background-color: #b6b6b6;
+    background-color: #dafaec;
   }
 
 footer {
@@ -70,7 +70,7 @@ footer {
     bottom: 0;
     width: 100%;
     margin-top: 50px;
-    padding: 15px;
-    font-size: 14px;
+    padding: 13px;
+    font-size: 13px;
     position: absolute;
   }
