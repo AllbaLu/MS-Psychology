@@ -67,6 +67,16 @@ export const ContactForm = () => {
     return (
         <div>
             <div className="container ">
+                <div>
+                    <figure className="text-center mt-4">
+                        <blockquote className="blockquote fs-4">
+                            <p>Contact us</p>
+                        </blockquote>
+                        <figcaption className="blockquote-footer">
+                        Write to us for more information about our services. 
+                        </figcaption>
+                    </figure>
+                </div>
                 <div className="row d-flex">
                     <div className="col col-lg-6">
                         <div className="mt-3 ms-4">
@@ -77,7 +87,7 @@ export const ContactForm = () => {
                     </div>
 
                     <div className="col col-lg-6">
-                        <div className=" form-control d-flex  mt-5 bg-transparent border-0 ">
+                        <div className=" form-control d-flex  mt-3 bg-transparent border-0 ">
                             <form onSubmit={handleSubmit}  >
                                 <div>
                                     Full Name

@@ -12,9 +12,10 @@ export const Navbar = () => {
 		<nav className="navbar navbar-expand-sm  " >
 			<div className="container-fluid">
 				
-				<a className="navbar-brand text-dark" href="#">
+				<a className="navbar-brand text-dark fs-2" href="#">
 					<img src="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-mental-health-and-psychologist-png-image_10269115.png" 
 					alt="" width="40" height="44" />
+					
 					Miguel Sá Psychology
 				</a>
 				<div className="collapse navbar-collapse d-flex flex-row justify-content-evenly" id="navbarNavAltMarkup">
