@@ -125,7 +125,9 @@ export const ContactForm = () => {
                                     />
                                 </div>
                                 <button type="submit" value="send" className="btn btn-outline-info "
-                                >Send</button>
+                                >Send
+                               
+                                </button>
                             </form>
                         </div>
                     </div>

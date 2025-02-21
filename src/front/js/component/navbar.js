@@ -39,6 +39,7 @@ export const Navbar = () => {
 							aria-expanded="false"
 						>
 							Schedule Sessions
+							
 						</button>
 						<ul className="dropdown-menu">
 							<li>
