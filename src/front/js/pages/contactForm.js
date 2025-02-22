@@ -132,7 +132,7 @@ export const ContactForm = () => {
                         </div>
                     </div>
 
-
+                    <img src="/giphy (1).gif" />
 
 
                 </div>

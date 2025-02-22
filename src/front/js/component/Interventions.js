@@ -25,13 +25,14 @@ export const Interventions = () => {
                     transition={{ duration: 0.4, animationDirection: "normal" }}
                     
                     >
-                        <img src={category.img} className="card-img-top w-100 h-20" alt={category.title}  />
+                        <img src={category.img} className="card-img-top" alt={category.title}  />
                         <div className="card-body">
                             
                             <h5 className="card-title">{category.title} </h5>
                             <p className="card-text">{category.description} </p>
                         </div>
                     </motion.div>
+                
                 ))}
             </section>
             

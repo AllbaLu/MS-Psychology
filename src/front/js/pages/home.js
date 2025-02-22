@@ -3,6 +3,7 @@ import { Context } from "../store/appContext";
 
 import "../../styles/home.css";
 import PricingPage from "./pricingPage";
+import { Carrousel } from "../component/Carrousel";
 
 export const Home = () => {
 	const { store, actions } = useContext(Context);
@@ -10,15 +11,15 @@ export const Home = () => {
 	return (
 		<div className="container">
 			
-			
+			<Carrousel />
 
 			<div className="text-center mt-5 ">
 
 
 
 					<span>
-						<img src={'https://media.licdn.com/dms/image/v2/D4D16AQEWdICwV1sGXg/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1732066571493?e=1740009600&v=beta&t=2MNlqejNHF-ZK2sppgrITMDCyrUa1nTeffyI34HNh1U'}
-							className="m-auto d-block w-50 h-50" />
+						{/* <img src={'https://media.licdn.com/dms/image/v2/D4D16AQEWdICwV1sGXg/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1732066571493?e=1740009600&v=beta&t=2MNlqejNHF-ZK2sppgrITMDCyrUa1nTeffyI34HNh1U'} 
+							className="m-auto d-block w-50 h-50" /> */}
 
 					</span>
 				<p>

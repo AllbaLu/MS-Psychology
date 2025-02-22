@@ -1,18 +1,17 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ScrollToTop from "./component/scrollToTop";
+
 import { BackendURL } from "./component/backendURL";
-import { Link } from "react-router-dom";
+
 import { Home } from "./pages/home";
-import { Demo } from "./pages/demo";
-import { Single } from "./pages/single";
+
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { InterventionsPage } from "./pages/interventionsPage";
 import { LoginPage } from "./pages/loginPage";
-import { RegisterUser } from "./component/RegisterUser";
+
 import { ContactForm } from "./pages/contactForm";
 import { About } from "./pages/about";
 import { ScheduleSessions } from "./pages/scheduleSessions";
@@ -24,12 +23,13 @@ const Layout = () => {
     // you can set the basename on the .env file located at the root of this project, E.g: BASENAME=/react-hello-webapp/
     const basename = process.env.BASENAME || "";
 
-    if(!process.env.BACKEND_URL || process.env.BACKEND_URL == "") return <BackendURL/ >;
+    if (!process.env.BACKEND_URL || process.env.BACKEND_URL == "") return <BackendURL />;
 
     return (
-        <div>
-            <BrowserRouter basename={basename}>
-                <ScrollToTop>
+        <>
+
+            <div>
+                <BrowserRouter basename={basename}>
                     <Navbar />
                     <Routes>
                         <Route element={<Home />} path="/" />
@@ -39,13 +39,12 @@ const Layout = () => {
                         <Route element={<ContactForm />} path="/contactForm" />
                         <Route element={<ScheduleSessions />} path="/scheduleSessions" />
                         <Route element={<PricingPage />} path="/pricingPage" />
-                        <Route element={<Single />} path="/single/:theid" />
                         <Route element={<h1>Not found!</h1>} />
                     </Routes>
-                    <Footer />
-                </ScrollToTop>
-            </BrowserRouter>
-        </div>
+                </BrowserRouter>
+            </div>
+        <Footer />
+        </>
     );
 };
 
