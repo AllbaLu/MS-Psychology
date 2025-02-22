@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { InterventionsPage } from "../pages/interventionsPage";
+import logo from "../../image/brain-rounded.png";
 
 
 export const Navbar = () => {
@@ -12,12 +12,14 @@ export const Navbar = () => {
 		<nav className="navbar navbar-expand-sm  " >
 			<div className="container-fluid">
 				
-				<a className="navbar-brand text-dark fs-2" href="#">
-					<img src="https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-mental-health-and-psychologist-png-image_10269115.png" 
-					alt="" width="40" height="44" />
+			<h1 className="navbar-brand text-dark fs-1 ms-4" >
+					{/* <img src={logo} 
+					 width="50" height="45" /> */}
 					
-					Miguel Sá Psychology
-				</a>
+					
+					<em><strong> Miguel Sá Psychology</strong></em>
+			</h1>
+				
 				<div className="collapse navbar-collapse d-flex flex-row justify-content-evenly" id="navbarNavAltMarkup">
 					<div className="navbar-nav mt-1 text-dark  ">
 						
