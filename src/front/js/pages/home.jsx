@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { Context } from "../store/appContext";
 import "../../styles/home.css";
-import { Carrousel } from "../component/Carrousel";
+
 import gif from "../../image/giphy-2.gif"
-import { image } from "../../image/hand.jpg";
+
 
 export const Home = () => {
 	const { store, actions } = useContext(Context);

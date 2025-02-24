@@ -1,8 +1,6 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import {motion} from "framer-motion";
+
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import { image, img, title } from "framer-motion/client";
+
 import "../../styles/interventions.css";
 
 
