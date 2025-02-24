@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import image from "../../image/lets-talk.gif"
 
 
 
@@ -81,8 +82,8 @@ export const ContactForm = () => {
                     <div className="col col-lg-6">
                         <div className="mt-3 ms-4">
 
-                            <img src="https://www.albertosoler.es/wp-content/uploads/2021/10/psicoterapia-online-videoconferencia.png"
-                                style={{ minWidth: "150px", height: "200px" }} />
+                            <img src={image}
+                                style={{ minWidth: "350px", height: "300px" }} />
                         </div>
                     </div>
 
@@ -132,7 +133,7 @@ export const ContactForm = () => {
                         </div>
                     </div>
 
-                    <img src="/giphy (1).gif" />
+                    
 
 
                 </div>
