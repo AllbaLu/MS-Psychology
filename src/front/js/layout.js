@@ -28,7 +28,7 @@ const Layout = () => {
     return (
         <>
 
-            <div>
+            <div className="h-100">
                 <BrowserRouter basename={basename}>
                     <Navbar />
                     <Routes>

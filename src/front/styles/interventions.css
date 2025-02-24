@@ -13,16 +13,16 @@
     perspective: 1000px;
 }
 .card-inner{
-    transition: 0.6s;
+    transition: transform 0.6s;
     transform-style:preserve-3d;
     width: 100%;
     height: 100%;
     position: relative; 
 }
 /* effect */
-.card:hover .card-inner{
+.card:hover .card-inner {
     transform: rotateY('180deg');
-    transition: transform 0.08s;
+    
 }
 /* front-back */
 .card-front, .card-back{
@@ -42,7 +42,7 @@
     justify-content: center;
     padding: 15px;
     text-align: center;
-    z-index: 2;
+    /* z-index: 2; */
     transition: box-shadow 0.3s ease;
     transition: transform 0.3s ease-in-out;
 }
