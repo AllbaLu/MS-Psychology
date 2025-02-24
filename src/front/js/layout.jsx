@@ -31,22 +31,22 @@ const Layout = () => {
     return (
         <>
 
-            <div className="h-100">
-                <BrowserRouter basename={basename}>
-                    <Navbar />
-                    <Routes>
-                        <Route element={<Home />} path="/" />
-                        <Route element={<About />} path="/about" />
-                        <Route element={<InterventionsPage />} path="/interventionsPage" />
-                        <Route element={<LoginPage />} path="/loginPage" />
-                        <Route element={<ContactForm />} path="/contactForm" />
-                        <Route element={<ScheduleSessions />} path="/scheduleSessions" />
-                        <Route element={<PricingPage />} path="/pricingPage" />
-                        <Route element={<h1>Not found!</h1>} />
-                    </Routes>
-                </BrowserRouter>
-            </div>
-        <Footer />
+                <div className="h-100">
+                    <BrowserRouter basename={basename}>
+                        <Navbar />
+                        <Routes>
+                            <Route element={<Home />} path="/" />
+                            <Route element={<About />} path="/about" />
+                            <Route element={<InterventionsPage />} path="/interventionsPage" />
+                            <Route element={<LoginPage />} path="/loginPage" />
+                            <Route element={<ContactForm />} path="/contactForm" />
+                            <Route element={<ScheduleSessions />} path="/scheduleSessions" />
+                            <Route element={<PricingPage />} path="/pricingPage" />
+                            <Route element={<h1>Not found!</h1>} />
+                        </Routes>
+                    </BrowserRouter>
+                </div>
+            <Footer />
         </>
     );
 };
