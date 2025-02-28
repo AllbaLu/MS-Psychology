@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import image from "../../image/lets-talk.gif"
 
@@ -38,7 +38,7 @@ export const ContactForm = () => {
         e.preventDefault()
 
         try {
-            const response = await fetch("https://scaling-barnacle-jjrrq7p9pvjpcq597-3001.app.github.dev/send_email", {
+            const response = await fetch("https://supreme-fortnight-pj77pw595qx43vq4-3001.app.github.dev/send_email", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -78,16 +78,8 @@ export const ContactForm = () => {
                         </figcaption>
                     </figure>
                 </div>
-                <div className="row d-flex">
-                    <div className="col col-lg-6">
-                        <div className="mt-3 ms-4">
-
-                            <img src={image}
-                                style={{ minWidth: "350px", height: "300px" }} />
-                        </div>
-                    </div>
-
-                    <div className="col col-lg-6">
+                <div className="row d-flex justify-content-center gap-5">
+                    <div className="col col-md-4">
                         <div className=" form-control d-flex  mt-3 bg-transparent border-0 ">
                             <form onSubmit={handleSubmit}  >
                                 <div>
@@ -125,17 +117,17 @@ export const ContactForm = () => {
                                         className="form-control"
                                     />
                                 </div>
-                                <button type="submit" value="send" className="btn btn-outline-info "
-                                >Send
-                               
-                                </button>
+                                <button type="submit" value="send" className="btn btn-outline-info ">Send</button>
                             </form>
                         </div>
                     </div>
+                    <div className="col col-md-4">
+                        <div className="mt-3 ms-4">
 
-                    
-
-
+                            <img src={image}
+                            style={{ minWidth: "250px", height: "140px" }} />
+                        </div>
+                    </div>
                 </div>
 
                 {/* Mostrar el mensaje de estado después de enviar el formulario */}
