@@ -38,7 +38,7 @@ export const ContactForm = () => {
         e.preventDefault()
 
         try {
-            const response = await fetch("https://supreme-fortnight-pj77pw595qx43vq4-3001.app.github.dev/send_email", {
+            const response = await fetch("https://crispy-zebra-69vv45xwxpxp25rg-3001.app.github.dev/send_email", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -125,7 +125,7 @@ export const ContactForm = () => {
                         <div className="mt-3 ms-4">
 
                             <img src={image}
-                            style={{ minWidth: "250px", height: "140px" }} />
+                            style={{ minWidth: "230px", height: "120px" }} />
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Context } from "../store/appContext";
 import "../../styles/home.css";
-import image from "../../image/agua.png"
+import image from "../../image/puzzll.jpg"
 import gif from "../../image/giphy-2.gif"
 
 
@@ -40,6 +40,8 @@ export const Home = () => {
 						<p>Believe that therapy can help anyone to unlock their greatest potential.</p>
 						<p>We respect your values, culture, ethnicity, sexual orientation and faith. We understand the role culture plays in the counselling process</p> 
 					</div>
+					
+
 				</div>
 		</div>
 	);
