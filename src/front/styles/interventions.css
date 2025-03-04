@@ -2,6 +2,7 @@
 .interventions-container{
     display: flex;
     margin-top: 50px;
+    margin-bottom: 50px;
     gap: 80px;
     justify-content: center;
     flex-wrap: wrap;

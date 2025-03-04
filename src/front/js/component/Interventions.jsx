@@ -40,24 +40,25 @@ export const Interventions = () => {
                 </figure>
             </div>
             <div className="interventions-container ">
-            {interventionsData.map((item) => (
-                <div key={item.id} className="card">
-                    <div className="card-inner"> 
-                        {/* front */}
-                        <div className="card-front">
-                            <img src={item.image} alt={item.title} />
-                            <h3>{item.title}</h3>
-                        </div>
-                        {/* back */}
-                        <div className="card-back">
-                            <p>{item.description}</p>
+                {interventionsData.map((item) => (
+                    <div key={item.id} className="card">
+                        <div className="card-inner"> 
+                            {/* front */}
+                            <div className="card-front">
+                                <img src={item.image} alt={item.title} />
+                                <h3>{item.title}</h3>
+                            </div>
+                            {/* back */}
+                            <div className="card-back">
+                                <p>{item.description}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            ))} 
+                ))} 
                 
 
             </div>
+            
         </>
     )
 }

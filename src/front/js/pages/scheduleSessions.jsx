@@ -31,14 +31,17 @@ export const ScheduleSessions = () => {
             {/* <!-- Calendly inline widget begin 50min --> */}
             <div className="calendly-inline-widget"
                 data-url="https://calendly.com/miguelsapsychology"
-                style={{ minWidth: "200px", height: "500px" }}>
+                style={{ minWidth: "200px", height: "400px" }}>
             </div>
             <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
             {/* <!-- Calendly inline widget end --> */}
 
-            <div className="pay-page">
+            <div className="pay mb-5 p-5">
+                <div className="mb-5">
 
-                <PricingPage />
+                    <PricingPage />
+                </div>
+                
             </div>
 
         </div>
