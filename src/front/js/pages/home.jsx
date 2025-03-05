@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Context } from "../store/appContext";
 import "../../styles/home.css";
-import image from "../../image/puzzll.jpg"
+import image from "../../image/plantasombra.png"
 import gif from "../../image/giphy-2.gif"
 
 
@@ -17,20 +17,24 @@ export const Home = () => {
 				backgroundPosition: "center",
 				backgroundRepeat: "no-repeat",
 				width: "100%",
-				minHeight: "70vh",
+				minHeight: "50vh",
 				display: "flex",
 				justifyContent: "center",
 				alignItems: "center",
+				// textDecorationLine: "overline",
 			}}
 			>
+				<div className="container text-start text-capitalize  mt-2 " >
+					<div>
 
-				<div className="container text-center mt-2 " >
-					<h1 className="display-4"><em><strong>The process of change</strong></em></h1>
-					<h3 ><em>Start the process today!</em></h3>
-				{/* <img src={gif} style={{Width:  "500px", height: " 300px"}}/> */}
+						<h1 className="display-5 mt-5 ms-5 "><strong>The process of change</strong></h1>
+						<h3 className="ms-5 text-muted">Start the process today!</h3>
+					{/* <img src={gif} style={{Width:  "500px", height: " 300px"}}/> */}
+					</div>
 
 
 				</div>
+
 				</div>
 				<div className="text-center mt-4 mx-5 p-5">
 					<div className="p-5">
