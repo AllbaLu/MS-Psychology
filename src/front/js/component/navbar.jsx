@@ -9,60 +9,65 @@ export const Navbar = () => {
 		
 
 	return (
-		<nav className="navbar navbar-expand-sm  " >
-			<div className="container-fluid">
-				
-			<h1 className="navbar-brand text-dark fs-1 ms-4" >
-					{/* <img src={logo} 
-					 width="50" height="45" /> */}
+		<div className="container">
+
+			<nav className="navbar navbar-expand-lg  " >
+				<div className="container-fluid">
 					
-					
-					<em><strong> Miguel Sá Psychology</strong></em>
-			</h1>
-				
-				<div className="collapse navbar-collapse d-flex flex-row justify-content-evenly" id="navbarNavAltMarkup">
-					<div className="navbar-nav mt-1 text-dark  ">
+				<h1 className="navbar-brand text-dark fs-1 ms-4" >
+						{/* <img src={logo} 
+						width="50" height="45" /> */}
 						
-						<div className="mx-1 "><Link to="/" className="btn text-info"  >Home</Link></div>
-							
-						<div className="mx-1"><Link to="/about" className="btn text-info">About</Link></div>
-
-						<div className="mx-1"><Link to="/interventionsPage" className="btn text-info">Interventions</Link></div>
-
-						<div className="mx-1" ><Link to="/contactForm" className="btn text-info">Contact</Link></div>	
-							
+						
+						<em><strong> Miguel Sá Psychology</strong></em>
+				</h1>
 					
-					{/* <div className="mx-1" ><Link to="/scheduleSessions" className="btn btn-outline">Schedule Sessions</Link></div>	 */}
-					<div className="dropdown">
-						<button
-							className="btn btn-info dropdown-toggle"
-							type="button"
-							data-bs-toggle="dropdown"
-							aria-expanded="false"
-						>
-							Schedule Sessions
-							
-						</button>
-						<ul className="dropdown-menu">
-							<li>
-							<Link  className=" dropdown-item visible-dropdown-item" to="/scheduleSessions">
-								Session 15 minutes
-							</Link>
-							</li>
-							<li>
-							<Link  className=" dropdown-item visible-dropdown-item" to="/scheduleSessions">
-								Full Session
-							</Link>
-							</li>
-						</ul>
+					<div className="navbar d-flex flex-row justify-content-around" id="navbarNavAltMarkup">
+						<div className="navbar-nav text-dark  ">
+							<ul className="navbar-nav d-flex flex-row">
+
+								<li className="nav-item "><Link to="/" className="btn text-info"  >Home</Link></li>
+									
+								<li className="nav-item"><Link to="/about" className="btn text-info">About</Link></li>
+
+								<li className="nav-item"><Link to="/interventionsPage" className="btn text-info">Interventions</Link></li>
+
+								<li className="nav-item" ><Link to="/contactForm" className="btn text-info">Contact</Link></li>	
+							</ul>
+								
+						
+						{/* <div className="mx-1" ><Link to="/scheduleSessions" className="btn btn-outline">Schedule Sessions</Link></div>	 */}
+						<div className="dropdown d-flex justify-content-center">
+							<button
+								className="btn btn-info dropdown-toggle"
+								type="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Schedule Sessions
+								
+							</button>
+							<ul className="dropdown-menu">
+								<li>
+								<Link  className=" dropdown-item visible-dropdown-item" to="/scheduleSessions">
+									Session 15 minutes
+								</Link>
+								</li>
+								<li>
+								<Link  className=" dropdown-item visible-dropdown-item" to="/scheduleSessions">
+									Full Session
+								</Link>
+								</li>
+							</ul>
+							</div>
 						</div>
+						{/* <div className= "d-flex">
+							<a className="nav-link active" aria-current="page" >sign up</a>
+							<Link to="/loginPage">Login</Link>
+						</div> */}
 					</div>
-					{/* <div className= "d-flex">
-						<a className="nav-link active" aria-current="page" >sign up</a>
-						<Link to="/loginPage">Login</Link>
-					</div> */}
 				</div>
-			</div>
-		</nav>
+			</nav>
+		</div>
 	);
 };
