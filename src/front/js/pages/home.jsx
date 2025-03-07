@@ -19,21 +19,29 @@ export const Home = () => {
 				width: "100%",
 				minHeight: "100vh",
 				display: "flex",
-				justifyContent: "center",
-				alignItems: "start",
+				// justifyContent: "center",
+				// alignItems: "end",
+				// textAlign: "center"
 				// textDecorationLine: "overline",
 			}}
 			>
-				<div className="container text-center mt-5 text-uppercase " >
-					<div>
+				<div className="container text-center " style={{ padding: "20px" }} >
+					<div className="mt-5 mb-5 text-uppercase  ">
 
-						<h1 className="display-2 text-white mb-2 ms-1 "><strong>The process of change</strong></h1>
-						<h3 className="ms-4 mb-2 text-white text-decoration-underline">Start the process today!</h3>
-					{/* <img src={gif} style={{Width:  "500px", height: " 300px"}}/> */}
+						<div className="name mb-5 " >
+							<h1><em><strong> Miguel Sá Psychology</strong></em></h1>
+						</div>
 					</div>
 
-
+					<div className="text-uppercase  d-flex mt-5">
+						<div className="titulo mt-5 " >
+								<h1 className="display-2 mt-5 text-white mb-2 mt-5 "><strong>The process of change</strong></h1>
+								<h3 className="ms-3 mb-2 text-white text-decoration-underline">Start the process today!</h3>
+							{/* <img src={gif} style={{Width:  "500px", height: " 300px"}}/> */}
+						</div>
+					</div>
 				</div>
+
 
 			</div>
 				<div className="text-center mt-4 mx-5 p-5">

@@ -1,6 +1,6 @@
 
 import { Link, useNavigate } from "react-router-dom";
-
+import logo from "../../image/image.png"
 
 
 export const Navbar = () => {
@@ -14,12 +14,12 @@ export const Navbar = () => {
 			<nav className="navbar navbar-expand-lg  " >
 				<div className="container-fluid">
 					
-				<h1 className="navbar-brand text-dark fs-1 ms-4" >
-						{/* <img src={logo} 
-						width="50" height="45" /> */}
+				<h1 className="navbar-brand text-dark fs-1 ms-5" >
+						 <img src={logo} 
+						width="180" height="90" /> 
 						
 						
-						<em><strong> Miguel Sá Psychology</strong></em>
+						{/* <em><strong> Miguel Sá Psychology</strong></em> */}
 				</h1>
 					
 					<div className="navbar d-flex flex-row justify-content-around" id="navbarNavAltMarkup">
