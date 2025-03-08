@@ -25,18 +25,18 @@ export const Home = () => {
 				// textDecorationLine: "overline",
 			}}
 			>
-				<div className="container text-center " style={{ padding: "20px" }} >
-					<div className="mt-5 mb-5 text-uppercase  ">
+				<div className="container-xxl text-center " style={{ padding: "20px" }} >
+					<div className="mt-3 mb-5 text-uppercase  ">
 
-						<div className="name mb-5 " >
-							<h1><em><strong> Miguel Sá Psychology</strong></em></h1>
+						<div className="name mb-5 p-5 " >
+							<h1 className="display-1 mb-5"><em><strong> Miguel Sá Psychology</strong></em></h1>
 						</div>
 					</div>
 
-					<div className="text-uppercase  d-flex mt-5">
-						<div className="titulo mt-5 " >
-								<h1 className="display-2 mt-5 text-white mb-2 mt-5 "><strong>The process of change</strong></h1>
-								<h3 className="ms-3 mb-2 text-white text-decoration-underline">Start the process today!</h3>
+					<div className="text-uppercase mt-5" >
+						<div className="titulo "style={{ paddingTop: "50px", marginTop: "190px" }} >
+								<h3 className="display-4 mt-5 text-white mb-2 " ><strong>The process of change</strong></h3>
+								<h4 className="text-white text-decoration-underline">Start the process today!</h4>
 							{/* <img src={gif} style={{Width:  "500px", height: " 300px"}}/> */}
 						</div>
 					</div>

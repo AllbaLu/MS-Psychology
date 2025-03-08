@@ -11,27 +11,21 @@ export const Navbar = () => {
 	return (
 		<div className="container">
 
-			<nav className="navbar navbar-expand-lg  " >
+			<nav className="navbar navbar-expand-sm  " >
 				<div className="container-fluid">
 					
-				<h1 className="navbar-brand text-dark fs-1 ms-5" >
-						 <img src={logo} 
-						width="180" height="90" /> 
-						
-						
-						{/* <em><strong> Miguel Sá Psychology</strong></em> */}
-				</h1>
+					<h1 className="navbar-brand text-dark fs-1 ms-5" >
+							<img src={logo} 
+							width="180" height="90" /> 												
+							{/* <em><strong> Miguel Sá Psychology</strong></em> */}
+					</h1>
 					
-					<div className="navbar d-flex flex-row justify-content-around" id="navbarNavAltMarkup">
+					<div className="navbar d-flex flex-row justify-content-evenly" id="navbarNavAltMarkup">
 						<div className="navbar-nav text-dark  ">
 							<ul className="navbar-nav d-flex flex-row">
-
-								<li className="nav-item "><Link to="/" className="btn text-info"  >Home</Link></li>
-									
+								<li className="nav-item "><Link to="/" className="btn text-info" >Home</Link></li>									
 								<li className="nav-item"><Link to="/about" className="btn text-info">About</Link></li>
-
 								<li className="nav-item"><Link to="/interventionsPage" className="btn text-info">Interventions</Link></li>
-
 								<li className="nav-item" ><Link to="/contactForm" className="btn text-info">Contact</Link></li>	
 							</ul>
 								
