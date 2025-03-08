@@ -26,10 +26,10 @@ export const Home = () => {
 			}}
 			>
 				<div className="container-xxl text-center " style={{ padding: "20px" }} >
-					<div className="mt-3 mb-5 text-uppercase  ">
+					<div className="mt-2 mb-5 text-uppercase  ">
 
 						<div className="name mb-5 p-5 " >
-							<h1 className="display-1 mb-5"><em><strong> Miguel Sá Psychology</strong></em></h1>
+							<h2 className="display-2 mb-5" style={{WebkitTextStrokeWidth: "thin"}}><em><strong> Miguel Sá Psychology</strong></em></h2>
 						</div>
 					</div>
 
