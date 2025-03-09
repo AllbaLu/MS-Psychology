@@ -44,17 +44,21 @@ export const Home = () => {
 
 
 			</div>
-				<div className="text-center mt-4 mx-5 p-5">
-					<div className="p-5">
-
-						<h3 >Our Values</h3>
-						<p>Kindness, compassion, openness, and inclusion. We value the science of therapeutic change and human growth. We value diversity and individual differences in the many ways people live and experience life.</p>
-						<p>Believe that therapy can help anyone to unlock their greatest potential.</p>
-						<p>We respect your values, culture, ethnicity, sexual orientation and faith. We understand the role culture plays in the counselling process</p> 
-					</div>
+			<div className="card w-75 mt-5" style={{placeSelf: "center", mixBlendMode: "hard-light"}}>
+				<h3 className="card-header text-center">
+					<strong>Our Values</strong> 
+				</h3>
+				<div className="card-body">
+					<p>Kindness, compassion, openness, and inclusion. We value the science of therapeutic change and human growth. We value diversity and individual differences in the many ways people live and experience life.</p>
+					<p>Believe that therapy can help anyone to unlock their greatest potential.</p>
+					<p>We respect your values, culture, ethnicity, sexual orientation and faith. We understand the role culture plays in the counselling process</p> 
+					
+				</div>
+			</div>
+				
 					
 
-				</div>
+				
 		</div>
 	);
 };
