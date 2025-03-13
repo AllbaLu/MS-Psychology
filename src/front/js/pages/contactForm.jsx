@@ -80,7 +80,7 @@ export const ContactForm = () => {
                 </div>
                 <div className="row d-flex justify-content-center gap-5">
                     <div className="col col-md-4">
-                        <div className=" form-control d-flex  mt-3 bg-transparent border-0 ">
+                        <div className=" form-control d-flex  mt-3 bg-transparent border-0  " >
                             <form onSubmit={handleSubmit}  >
                                 <div>
                                     Full Name
@@ -125,7 +125,7 @@ export const ContactForm = () => {
                         <div className="mt-3 ms-4">
 
                             <img src={image}
-                            style={{ minWidth: "230px", height: "120px" }} />
+                            style={{ minWidth: "220px", height: "120px" }} />
                         </div>
                     </div>
                 </div>
