@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import image from "../../image/lets-talk.gif"
+import {ScheduleSessions} from "../pages/scheduleSessions";
 
 
 
@@ -37,6 +38,8 @@ export const ContactForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
+    
+
         try {
             const response = await fetch("https://crispy-zebra-69vv45xwxpxp25rg-3001.app.github.dev/send_email", {
                 method: 'POST',
@@ -63,7 +66,9 @@ export const ContactForm = () => {
             setStatusMessage('Network or server connection error');
         }
     };
-
+    const handleEvent = (e) => {
+        navigate("/ScheduleSessions")
+    }
 
     return (
         <div>
@@ -126,7 +131,10 @@ export const ContactForm = () => {
                             <img src={image}
                             style={{ minWidth: "70px", height: "40px" }} />
                             <p className="text" style={{textAlign: "justify"}}>To schedule your first appointment or to request a free phone consultation click here: </p>
-                            <Link className="stretched-link text-center" to="/scheduleSessions">Schedule a Session</Link> 
+                            <div>
+                                    <button onClick={handleEvent} type="button" className="btn btn-link" >Schedule a Session</button>
+                                    
+                            </div>  
                         </div>
                     </div>
                 </div>
