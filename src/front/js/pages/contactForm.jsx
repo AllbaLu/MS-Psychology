@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import image from "../../image/lets-talk.gif"
 
 
@@ -67,7 +67,7 @@ export const ContactForm = () => {
 
     return (
         <div>
-            <div className="container ">
+            <div className="container h-100 ">
                 <div>
                     <figure className="text-center mt-4">
                         <blockquote className="blockquote fs-4">
@@ -78,9 +78,9 @@ export const ContactForm = () => {
                         </figcaption>
                     </figure>
                 </div>
-                <div className="row d-flex justify-content-center gap-5">
-                    <div className="col col-md-4">
-                        <div className=" form-control d-flex  mt-3 bg-transparent border-0  " >
+                <div className="row d-flex justify-content-evenly ">
+                    <div className="col-sm-6 col-md-5 col-lg-6">
+                        <div className=" form-control d-flex  mt-3 bg-transparent border-0  " style={{width: "250px"}} >
                             <form onSubmit={handleSubmit}  >
                                 <div>
                                     Full Name
@@ -121,18 +121,25 @@ export const ContactForm = () => {
                             </form>
                         </div>
                     </div>
-                    <div className="col col-md-4">
-                        <div className="mt-3 ms-4">
-
+                    <div className="col-sm-6 col-md-5 col-lg-6">
+                        <div className="mt-2 ">
                             <img src={image}
-                            style={{ minWidth: "220px", height: "120px" }} />
+                            style={{ minWidth: "70px", height: "40px" }} />
+                            <p className="text" style={{textAlign: "justify"}}>To schedule your first appointment or to request a free phone consultation click here: </p>
+                            <Link className="stretched-link text-center" to="/scheduleSessions">Schedule a Session</Link> 
                         </div>
                     </div>
                 </div>
 
+
                 {/* Mostrar el mensaje de estado después de enviar el formulario */}
                 {statusMessage && <p>{statusMessage}</p>}
             </div>
+                <div className="mt-5 mb-5" style={{mixBlendMode: "saturation"}}>
+                    <p className="mt-5 mb-5">Contact us</p>
+                    <p className="mt-5 mb-5">Contact us</p>
+
+                </div>
         </div>
 
     )

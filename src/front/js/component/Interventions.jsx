@@ -20,7 +20,7 @@ const interventionsData = [
     },
     {
         id:3,
-        title: "Psychology professor",
+        title: "Lecturer",
         description: "Psychology training",
         image: "https://elplacerdelalectura.com/wp-content/uploads/2024/04/af33ae05-23b3-483a-a086-d693a175d8d9.jpg"
     }
