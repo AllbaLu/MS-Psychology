@@ -1,4 +1,5 @@
 import logo from "../../image/giphyMoving1.gif"
+import foto from "../../image/fotoMiguelPrueba.jpg"
 
 
 
@@ -12,15 +13,15 @@ export const About = () => {
                             <p>About Therapist</p>
                         </blockquote>
                         <figcaption className="blockquote-footer">
-                        {/* Write to us for more information about our services.  */}
+                           Dr. Miguel Sá
                         </figcaption>
                     </figure>
                 </div>
             <div className="card-about mb-3 mt-5" style={{ maxWidth: "400rem" }}>
                 <div className="row g-0">
-                    <div className="col-md-4 ms-5">
-                        <img src="https://i.pinimg.com/564x/9d/6b/9d/9d6b9db2dcb0526a09b89fb35d075c72.jpg" alt="..." 
-                        style={{width:"250px"}} />
+                    <div className="col-md-4 ">
+                        <img src={foto} 
+                        style={{width:"250px", height: "200px"}} />
                     </div>
                     <div className="col-md-8 bg-transparent ">
                         <div className="card-body ">
