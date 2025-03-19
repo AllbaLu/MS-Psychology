@@ -9,8 +9,8 @@ export const InterventionsPage = () => {
     return(
         <>
             <Interventions />
-            <div className="container-xxl h-100">
-                <div className="card-home" style={{placeSelf: "center", mixBlendMode: "hard-light", marginBottom: "20px"}}>
+            <div className="container-xxl h-100"  >
+                <div className="card-home" style={{placeSelf: "center",  marginBottom: "20px"}}>
                     
                     <figure className="text-center mt-4">
                             <blockquote className="blockquote fs-4">
@@ -24,7 +24,8 @@ export const InterventionsPage = () => {
                             Through my experience in clinical, sport and university psychology, I provide you with the support you need to enhance your well-being, overcome obstacles and achieve your goals.
                         </p>
                             
-                        <div className="card-body" style={{textAlign: "justify"}}>
+                    </div>
+                        <div className="card-block" style={{textAlign: "justify"}}>
                             <figure className="text-center mt-4">
                                 <blockquote className="blockquote fs-4">
                                     <p>Benefits of Psychology: </p>
@@ -33,17 +34,31 @@ export const InterventionsPage = () => {
                                     Know more about our services. 
                                 </figcaption> */}
                             </figure>
-                            <div className="pb-5" style={{textAlign: "justify"}}>
-                                <ul className="list"  >
-                                    <li className="item "><strong >Emotional Wellbeing:</strong>  Learn how to manage stress, anxiety and other emotions that may be affecting your daily life.</li>
-                                    <li className="item"><strong>Self-knowledge and Personal Growth:</strong>  Discover strengths, areas of improvement and strategies to reach your best version.</li>
-                                    <li className="item"><strong>Sports Performance:</strong>  Improve your concentration, confidence and resilience to optimise your performance in competitions.</li>
-                                    <li className="item"><strong>Academic and Professional Success:</strong>  Develop study, time management and decision-making skills to achieve your goals.</li>
-                                    <li className="item"><strong>Healthy Relationships:</strong>  Learn to communicate effectively and build positive relationships in all areas of your life.</li>
+                            <div className="d-flex justify-content-center pb-5 " style={{borderBottom: "double"}} >
+                                <ul className="list-group " >
+                                    <li className="list-group mb-3 mt-2" >
+                                        <i className="fa-solid fa-angles-right fa-sm mb-2" >  Emotional Wellbeing : </i>  
+                                        Learn how to manage stress, anxiety and other emotions that may be affecting your daily life.
+                                    </li>
+                                    <li className="list-group mb-3">  
+                                        <i className="fa-solid fa-angles-right fa-sm mb-2"> Self-knowledge and Personal Growth:</i>  
+                                        Discover strengths, areas of improvement and strategies to reach your best version.
+                                    </li>
+                                    <li className="list-group mb-3">  
+                                        <i className="fa-solid fa-angles-right fa-sm mb-2"> Sports Performance:</i>
+                                        Improve your concentration, confidence and resilience to optimise your performance in competitions.
+                                    </li>
+                                    <li className="list-group mb-3">  
+                                        <i className="fa-solid fa-angles-right fa-sm mb-2"> Academic and Professional Success:</i>
+                                        Develop study, time management and decision-making skills to achieve your goals.
+                                    </li>
+                                    <li className="list-group mb-3"> 
+                                        <i className="fa-solid fa-angles-right fa-sm mb-2"> Healthy Relationships: </i>
+                                        Learn to communicate effectively and build positive relationships in all areas of your life.
+                                    </li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
                     <div className="card-footer mt-3 mb-5 pb-5" style={{display:"none"}}>
                         <div className="mb-5">
                             <p className="mb-5">  </p>
