@@ -128,9 +128,11 @@ export const ContactForm = () => {
                     </div>
                     <div className="col-sm-6 col-md-5 col-lg-6">
                         <div className="mt-2 ">
-                            <img src={image}
-                            style={{ minWidth: "70px", height: "40px" }} />
-                            <p className="text" style={{textAlign: "justify"}}>To schedule your first appointment or to request a free phone consultation click here: </p>
+                            {/* <img src={image}
+                            style={{ minWidth: "70px", height: "40px" }} /> */}
+                            <p className="text" style={{textAlign: "justify"}}>
+                                To schedule your first appointment or to request a free phone consultation click here: 
+                            </p>
                             <div>
                                     <button onClick={handleEvent} type="button" className="btn btn-link" >Schedule a Session</button>
                                     

@@ -45,16 +45,16 @@ export const InterventionsPage = () => {
                                         Discover strengths, areas of improvement and strategies to reach your best version.
                                     </li>
                                     <li className="list-group mb-3">  
-                                        <i className="fa-solid fa-angles-right fa-sm mb-2"> Sports Performance:</i>
-                                        Improve your concentration, confidence and resilience to optimise your performance in competitions.
-                                    </li>
-                                    <li className="list-group mb-3">  
                                         <i className="fa-solid fa-angles-right fa-sm mb-2"> Academic and Professional Success:</i>
                                         Develop study, time management and decision-making skills to achieve your goals.
                                     </li>
                                     <li className="list-group mb-3"> 
                                         <i className="fa-solid fa-angles-right fa-sm mb-2"> Healthy Relationships: </i>
                                         Learn to communicate effectively and build positive relationships in all areas of your life.
+                                    </li>
+                                    <li className="list-group mb-3">  
+                                        <i className="fa-solid fa-angles-right fa-sm mb-2"> Sports Performance:</i>
+                                        Improve your concentration, confidence and resilience to optimise your performance in competitions.
                                     </li>
                                 </ul>
                             </div>
