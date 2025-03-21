@@ -1,5 +1,5 @@
 import logo from "../../image/giphyMoving1.gif"
-import foto from "../../image/fotoMiguelPrueba.jpg"
+import foto from "../../image/fotoMiguelPerfil.jpg"
 
 
 
