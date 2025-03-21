@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import image from "../../image/lets-talk.gif"
+import image from "../../image/agendar.png"
 import {ScheduleSessions} from "../pages/scheduleSessions";
 
 
@@ -85,7 +85,7 @@ export const ContactForm = () => {
                 </div>
                 <div className="row d-flex justify-content-evenly ">
                     <div className="col-sm-6 col-md-5 col-lg-6">
-                        <div className=" form-control d-flex  mt-3 bg-transparent border-0  " style={{width: "250px"}} >
+                        <div className=" form-control d-flex  mt-1 bg-transparent border-0  " style={{width: "250px"}} >
                             <form onSubmit={handleSubmit}  >
                                 <div>
                                     Full Name
@@ -127,16 +127,35 @@ export const ContactForm = () => {
                         </div>
                     </div>
                     <div className="col-sm-6 col-md-5 col-lg-6">
-                        <div className="mt-2 ">
+                        <div className="mt-5 ">
                             {/* <img src={image}
                             style={{ minWidth: "70px", height: "40px" }} /> */}
-                            <p className="text" style={{textAlign: "justify"}}>
-                                To schedule your first appointment or to request a free phone consultation click here: 
-                            </p>
-                            <div>
-                                    <button onClick={handleEvent} type="button" className="btn btn-link" >Schedule a Session</button>
-                                    
-                            </div>  
+                            <div className="img"
+                                        style={{
+                                            backgroundImage: `url(${image})`,
+                                            backgroundSize: "cover",
+                                            backgroundPosition: "center",
+                                            backgroundRepeat: "no-repeat",
+                                            width: "100%",
+                                            minHeight: "40vh",
+                                            display: "flex",
+                                            // justifyContent: "center",
+                                            // alignItems: "end",
+                                            // textAlign: "center"
+                                            //textDecorationLine: "overline",
+                                        }}
+                                        >
+                                            <div className="mx-2">
+
+                                                <div className="text-white" style={{textAlign: "justify"}}>
+                                                    To schedule your first appointment or to request a free phone consultation click here: 
+                                                <div className="text-center " style={{mixBlendMode: "plus-lighter", border: "double"}}  >
+                                                        <button onClick={handleEvent} type="button" className="btn btn-link" >Schedule a Session</button>
+                                                        
+                                                </div>  
+                                                </div>
+                                            </div>
+                                        </div>
                         </div>
                     </div>
                 </div>

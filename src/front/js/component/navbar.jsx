@@ -44,11 +44,11 @@ export const Navbar = () => {
 								
 							</button>
 							<ul className="dropdown-menu">
-								<li>
+								{/* <li>
 								<Link  className=" dropdown-item visible-dropdown-item" to="/scheduleSessions">
 									Session 15 minutes
 								</Link>
-								</li>
+								</li> */}
 								<li>
 								<Link  className=" dropdown-item visible-dropdown-item" to="/scheduleSessions">
 									Full Session

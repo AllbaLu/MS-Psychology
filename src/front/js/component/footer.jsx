@@ -12,20 +12,20 @@ export const Footer = () => (
 
 	<footer className="footer   ">
 		<div className="container-fluid ">
-			<div className="row mx-4">
+			<div className="row mx-1">
 				<div className="col col-lg-3">
-					<div className=" mt-2 ms-3 ">
+					<div className=" mt-2 ms-1 ">
 
 						{/* <div><i className="fa-solid fa-user"> </i> MIGUEL SÁ</div> */}
 						<div><i className="fa-solid fa-envelope"> </i> miguelsapsychology@gmail.com</div>
-						<div><i className="fa-brands fa-square-whatsapp "></i> (+351)918 079 311</div>
+						{/* <div><i className="fa-brands fa-square-whatsapp "></i> (+351)918 079 311</div> */}
 
 					</div>
 				</div>
 				
 				<div className="col col-lg-3   ">
 					
-					<div className="d-flex gap-1 mt-2  ">
+					<div className="d-flex gap-1 mt-1  " style={{alignSelf: "center"}}>
 							<button
 								onClick={() => openLink("https://www.linkedin.com/in/miguel-barros-de-s%C3%A1-a336a8a8")}
 								className="btn btn-outline-dark  "
@@ -55,7 +55,7 @@ export const Footer = () => (
 				</div>
 
 				<div className="col col-lg-4 align-self-end ">
-					<div className="text-end"><p>&copy; 2025 - All rights reserved</p></div>
+					<div className="text-end mt-2"><p>&copy; 2025 - All rights reserved</p></div>
 				</div>
 			</div>
 

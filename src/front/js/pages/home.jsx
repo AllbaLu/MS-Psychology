@@ -34,7 +34,7 @@ export const Home = () => {
 					</div>
 
 					<div className="text-uppercase mt-5 pb-5" >
-						<div className="titulo "style={{ paddingTop: "50px", marginTop: "190px", paddingBottom: "45px" }} >
+						<div className="titulo "style={{ paddingTop: "50px", marginTop: "190px", paddingBottom: "55px" }} >
 								<h3 className="display-4 mt-5 text-white mb-2 " ><strong>The process of change</strong></h3>
 								<h4 className="text-white text-decoration-underline">Start the process today!</h4>
 							{/* <img src={gif} style={{Width:  "500px", height: " 300px"}}/> */}
