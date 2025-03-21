@@ -6,67 +6,93 @@ import { Interventions } from "../component/Interventions";
 
 export const InterventionsPage = () => {
 
-    return(
+    return (
         <>
+            {/* card-inner */}
             <Interventions />
-            <div className="container-xxl h-100"  >
-                <div className="card-home" style={{placeSelf: "center",  marginBottom: "20px"}}>
-                    
+            {/* block-1 */}
+            <div className="container-xxl h-100 "  >
+                <div className="card-home" style={{ placeSelf: "center", marginBottom: "20px" }}>
+
                     <figure className="text-center mt-4">
-                            <blockquote className="blockquote fs-4">
-                                <p>How can I help you improve?</p>
-                            </blockquote>
-                            
-                        </figure>
-                    <div className="card-body " style={{textAlign: "justify"}}>
+                        <blockquote className="blockquote fs-3">
+                            <h3 >
+                                    <strong>How can I help you improve?</strong>
+                            </h3>
+                        </blockquote>
+
+                    </figure>
+                    <div className="card-body " style={{ textAlign: "justify" }}>
                         <p>
-                            Psychology is a powerful tool for personal growth, emotional well-being and optimal performance in different areas of life. 
+                            Psychology is a powerful tool for personal growth, emotional well-being and optimal performance in different areas of life.
                             Through my experience in clinical, sport and university psychology, I provide you with the support you need to enhance your well-being, overcome obstacles and achieve your goals.
                         </p>
-                            
+
                     </div>
-                        <div className="card-block" style={{textAlign: "justify"}}>
-                            <figure className="text-center mt-4">
-                                <blockquote className="blockquote fs-4">
-                                    <p>Benefits of Psychology: </p>
-                                </blockquote>
-                                {/* <figcaption className="blockquote-footer">
-                                    Know more about our services. 
-                                </figcaption> */}
-                            </figure>
-                            <div className="d-flex justify-content-center pb-5 " style={{borderBottom: "double"}} >
-                                <ul className="list-group " >
-                                    <li className="list-group mb-3 mt-2" >
-                                        <i className="fa-solid fa-angles-right fa-sm mb-2" >  Emotional Wellbeing : </i>  
-                                        Learn how to manage stress, anxiety and other emotions that may be affecting your daily life.
-                                    </li>
-                                    <li className="list-group mb-3">  
-                                        <i className="fa-solid fa-angles-right fa-sm mb-2"> Self-knowledge and Personal Growth:</i>  
-                                        Discover strengths, areas of improvement and strategies to reach your best version.
-                                    </li>
-                                    <li className="list-group mb-3">  
-                                        <i className="fa-solid fa-angles-right fa-sm mb-2"> Academic and Professional Success:</i>
-                                        Develop study, time management and decision-making skills to achieve your goals.
-                                    </li>
-                                    <li className="list-group mb-3"> 
-                                        <i className="fa-solid fa-angles-right fa-sm mb-2"> Healthy Relationships: </i>
-                                        Learn to communicate effectively and build positive relationships in all areas of your life.
-                                    </li>
-                                    <li className="list-group mb-3">  
-                                        <i className="fa-solid fa-angles-right fa-sm mb-2"> Sports Performance:</i>
-                                        Improve your concentration, confidence and resilience to optimise your performance in competitions.
-                                    </li>
-                                </ul>
+                    {/* block-2 */}
+                    <div className="card-body" style={{ textAlign: "justify" }}>
+                        <figure className="text-center mt-4">
+                            <blockquote className="blockquote fs-3">
+                                <h3 >
+                                    <strong>Benefits of Psychology:</strong>
+                                </h3>
+                            </blockquote>
+
+                        </figure>
+                        <div className="d-flex justify-content-center  " >
+                            <ul className="list-unstyled" >
+                                <li className="list mb-3 mt-2" >
+                                    <i className="fa-solid fa-angles-right fa-sm mb-2" style={{color:" #63E6BE"}} ></i> <strong>Emotional Wellbeing : </strong> 
+                                    Learn how to manage stress, anxiety and other emotions that may be affecting your daily life.
+                                </li>
+                                <li className="list mb-3">
+                                    <i className="fa-solid fa-angles-right fa-sm mb-2" style={{color:" #63E6BE"}}></i> <strong>Self-knowledge and Personal Growth : </strong> 
+                                    Discover strengths, areas of improvement and strategies to reach your best version.
+                                </li>
+                                <li className="list mb-3">
+                                    <i className="fa-solid fa-angles-right fa-sm mb-2" style={{color:" #63E6BE"}}></i> <strong>Academic and Professional Success : </strong>
+                                    Develop study, time management and decision-making skills to achieve your goals.
+                                </li>
+                                <li className="list mb-3">
+                                    <i className="fa-solid fa-angles-right fa-sm mb-2" style={{color:" #63E6BE"}}></i> <strong>Healthy Relationships : </strong>
+                                    Learn to communicate effectively and build positive relationships in all areas of your life.
+                                </li>
+                                <li className="list mb-3">
+                                    <i className="fa-solid fa-angles-right fa-sm mb-2" style={{color:" #63E6BE"}}></i> <strong>Sports Performance : </strong>
+                                    Improve your concentration, confidence and resilience to optimise your performance in competitions.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    {/* block-3 */}
+                    <div className="card-home" style={{ placeSelf: "center", marginBottom: "30px", paddingBottom: "70px" }}>
+                        <figure className="text-center mt-2">
+                            <blockquote className="blockquote fs-3">
+
+                                <h3 >
+                                    <strong>Our Values</strong>
+                                </h3>
+                            </blockquote>
+
+                        </figure>
+                        <div className="card-body  " style={{ textAlign: "justify", marginBottom: "20px" }}>
+
+                            <p>Kindness, compassion, openness, and inclusion. We value the science of therapeutic change and human growth.
+                                We value diversity and individual differences in the many ways people live and experience life.
+                                We respect your values, culture, ethnicity, sexual orientation and faith.
+                                We understand the role culture plays in the counselling process. 
+                            <strong> Believe that therapy can help anyone to unlock their greatest potential.</strong></p>
+
+
+                        </div>
+                        <div className="card-footer mt-3 mb-5 pb-5" style={{ display: "none" }}>
+                            <div className="mb-5">
+                                <p className="mb-5"> card  </p>
                             </div>
                         </div>
-                    <div className="card-footer mt-3 mb-5 pb-5" style={{display:"none"}}>
-                        <div className="mb-5">
-                            <p className="mb-5">  </p>
-                        </div>
                     </div>
-                </div>	
+                </div>
             </div>
-                
         </>
     )
 }
