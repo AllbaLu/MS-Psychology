@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import image from "../../image/agendar.png"
-import {ScheduleSessions} from "../pages/scheduleSessions";
+import { ScheduleSessions } from "../pages/scheduleSessions";
 
 
 
@@ -38,7 +38,7 @@ export const ContactForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-    
+
 
         try {
             const response = await fetch("https://crispy-zebra-69vv45xwxpxp25rg-3001.app.github.dev/send_email", {
@@ -76,16 +76,16 @@ export const ContactForm = () => {
                 <div>
                     <figure className="text-center mt-4">
                         <blockquote className="blockquote fs-4">
-                            <p>Contact us</p>
+                            <p>Contact</p>
                         </blockquote>
                         <figcaption className="blockquote-footer">
-                        Write to us for more information about our services. 
+                            Write me for more information about services.
                         </figcaption>
                     </figure>
                 </div>
                 <div className="row d-flex justify-content-evenly ">
                     <div className="col-sm-6 col-md-5 col-lg-6">
-                        <div className=" form-control d-flex  mt-1 bg-transparent border-0  " style={{width: "250px"}} >
+                        <div className=" form-control d-flex  mt-1 bg-transparent border-0  " style={{ width: "250px" }} >
                             <form onSubmit={handleSubmit}  >
                                 <div>
                                     Full Name
@@ -131,31 +131,31 @@ export const ContactForm = () => {
                             {/* <img src={image}
                             style={{ minWidth: "70px", height: "40px" }} /> */}
                             <div className="img"
-                                        style={{
-                                            backgroundImage: `url(${image})`,
-                                            backgroundSize: "cover",
-                                            backgroundPosition: "center",
-                                            backgroundRepeat: "no-repeat",
-                                            width: "100%",
-                                            minHeight: "40vh",
-                                            display: "flex",
-                                            // justifyContent: "center",
-                                            // alignItems: "end",
-                                            // textAlign: "center"
-                                            //textDecorationLine: "overline",
-                                        }}
-                                        >
-                                            <div className="mx-2">
+                                style={{
+                                    backgroundImage: `url(${image})`,
+                                    backgroundSize: "cover",
+                                    backgroundPosition: "center",
+                                    backgroundRepeat: "no-repeat",
+                                    width: "100%",
+                                    minHeight: "40vh",
+                                    display: "flex",
+                                    // justifyContent: "center",
+                                    // alignItems: "end",
+                                    // textAlign: "center"
+                                    //textDecorationLine: "overline",
+                                }}
+                            >
+                                <div className="mx-2">
 
-                                                <div className="text-white" style={{textAlign: "justify"}}>
-                                                    To schedule your first appointment or to request a free phone consultation click here: 
-                                                <div className="text-center " style={{mixBlendMode: "plus-lighter", border: "double"}}  >
-                                                        <button onClick={handleEvent} type="button" className="btn btn-link" >Schedule a Session</button>
-                                                        
-                                                </div>  
-                                                </div>
-                                            </div>
+                                    <div className="text-white" style={{ textAlign: "justify" }}>
+                                        To schedule your first appointment or to request a free phone consultation click here:
+                                        <div className="text-center " style={{ mixBlendMode: "plus-lighter", border: "double" }}  >
+                                            <button onClick={handleEvent} type="button" className="btn btn-link" >Schedule a Session</button>
+
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -164,11 +164,11 @@ export const ContactForm = () => {
                 {/* Mostrar el mensaje de estado después de enviar el formulario */}
                 {statusMessage && <p>{statusMessage}</p>}
             </div>
-                <div className="mt-5 mb-5" style={{mixBlendMode: "saturation"}}>
-                    <p className="mt-5 mb-5">Contact us</p>
-                    <p className="mt-5 mb-5">Contact us</p>
+            <div className="mt-5 mb-5" style={{ mixBlendMode: "saturation" }}>
+                <p className="mt-5 mb-5">Contact us</p>
+                <p className="mt-5 mb-5">Contact us</p>
 
-                </div>
+            </div>
         </div>
 
     )

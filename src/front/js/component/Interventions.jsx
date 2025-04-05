@@ -35,7 +35,7 @@ export const Interventions = () => {
                         <p>Interventions</p>
                     </blockquote>
                     <figcaption className="blockquote-footer">
-                        Know more about our services. 
+                        Know more about services. 
                     </figcaption>
                 </figure>
             </div>

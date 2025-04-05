@@ -70,14 +70,14 @@ export const InterventionsPage = () => {
                             <blockquote className="blockquote fs-3">
 
                                 <h3 >
-                                    <strong>Our Values</strong>
+                                    <strong>Values</strong>
                                 </h3>
                             </blockquote>
 
                         </figure>
                         <div className="card-body  " style={{ textAlign: "justify", marginBottom: "20px" }}>
 
-                            <p>Kindness, compassion, openness, and inclusion. We value the science of therapeutic change and human growth.
+                            <p>Kindness, compassion, openness, and inclusion. I value the science of therapeutic change and human growth.
                                 We value diversity and individual differences in the many ways people live and experience life.
                                 We respect your values, culture, ethnicity, sexual orientation and faith.
                                 We understand the role culture plays in the counselling process. 

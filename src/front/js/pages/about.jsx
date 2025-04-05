@@ -1,9 +1,19 @@
 import logo from "../../image/giphyMoving1.gif"
 import foto from "../../image/fotoMiguelPerfil.jpg"
+import certificado from "../../image/certificadoRegPsych.jpg"
+import declaracion from "../../image/DeclaracOrdPsych.jpg"
+import registro from "../../image/regEuroPsy.jpg"
+import { useState } from "react"
+import "../../styles/about.css"
+
+
+
 
 
 
 export const About = () => {
+    const [modalImg, setModalImg] = useState(null); 
+
     return (
 
         <div className="container h-100 bg-transparent ">
@@ -35,12 +45,12 @@ export const About = () => {
                                 I have been pursuing my professional passions, that to this day I am actively involved:
                                 clinical psychology, performance psychology, and teaching, which I currently at Curtin University Malaysia.
                             </p>
-                            
+
                         </div>
 
                     </div>
                 </div>
-                <div className="card-body bg-transparent" style={{ marginBottom: "50px", textAlign: "justify", paddingBottom: "40px" }}>
+                <div className="card-body bg-transparent" style={{ marginBottom: "50px", textAlign: "justify", paddingBottom: "10px" }}>
                     <div className="card-text">
 
                         <p className="card-text">
@@ -53,7 +63,18 @@ export const About = () => {
 
                     </div>
                 </div>
-                <div className="card-footer">
+                <div className="mb-5 d-flex justify-content-evenly" style={{alignItems: "center", paddingBottom: "40px"}}>
+                    <img src={certificado} onClick={() => setModalImg(certificado)} className="rounded float" alt="Certificado de registro como psicólogo clínico" style={{ width: "200px", height: "150px" }} />
+                    <img src={declaracion} onClick={() => setModalImg(declaracion)} className="rounded float" alt="Declaracion Orden de Psicologos" style={{ width: "200px", height: "150px" }} />
+                    <img src={registro} onClick={() => setModalImg(registro)} className="rounded float" alt="Registro EuroPsy Psicologo" style={{ width: "200px", height: "150px" }} />
+
+                </div>
+                {modalImg && (
+                    <div className="modal" onClick={() => setModalImg(null)}>
+                        <img src={modalImg} alt="Imagen ampliada" />
+                    </div>
+                )}
+                <div className="card-footer mb-5">
 
                 </div>
             </div>
