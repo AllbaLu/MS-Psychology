@@ -77,11 +77,11 @@ export const InterventionsPage = () => {
                         </figure>
                         <div className="card-body  " style={{ textAlign: "justify", marginBottom: "20px" }}>
 
-                            <p>Kindness, compassion, openness, and inclusion. I value the science of therapeutic change and human growth.
-                                We value diversity and individual differences in the many ways people live and experience life.
-                                We respect your values, culture, ethnicity, sexual orientation and faith.
-                                We understand the role culture plays in the counselling process. 
-                            <strong> Believe that therapy can help anyone to unlock their greatest potential.</strong></p>
+                            <p>Kindness, compassion, openness, and inclusion. That is the true value of the science of therapeutic change and human growth.
+                                Diversity and individual differences in the many ways people live and experience life are truly valued as part of the human experience.
+                                And your values, culture, ethnicity, sexual orientation, and faith will always be respected.
+ 
+                            <strong> There can be no growth in the therapeutic process without understanding and valuing what makes you unique!</strong></p>
 
 
                         </div>
