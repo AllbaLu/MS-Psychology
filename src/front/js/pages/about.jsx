@@ -79,11 +79,10 @@ export const About = () => {
                                     <li>Postgraduation in Sport and Health Psychology - ISPA (2016)</li>
                                     <li>PhD in Clinical Psychology - Curtin University (2025) - <strong>to be started</strong></li>
                                 </ul>
-
                             </div>
-
                         </div>
                     </div>
+
                     <div className="col-sm-6">
                         <div className="card-text">
                             <figure className="text-center mt-4">
@@ -91,46 +90,38 @@ export const About = () => {
                                     <p>Professional experience:</p>
                                 </blockquote>
                             </figure>
-                            <div className="row">
-                                <div className="col-sm-8">
-                                    <div className="text ">
-                                        <ul className="list-unstyled ms-5" style={{ alignItems: "center" }}>
-                                            <li>Curtin University Malaysia   </li>
-                                            <li>Telemedicine   </li>
-                                            <li>MiguelSa Psychology    </li>
-                                            <li>Universidade Europeia   </li>
-                                            <li>SeaYourself    </li>
-                                            <li>Hospital da Luz   </li>
-                                            <li>Rafa Nadal Academy    </li>
-                                            <li>Sporting CP   </li>
-                                            <li>FC Famalicão   </li>
-                                            <li>SL Benfica   </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div className="col-sm-4">
-                                    <ul className="list-unstyled">
-                                        <li>2024 -<strong> Present</strong></li>
-                                        <li>2024 -<strong> Present</strong></li>
-                                        <li>2017 -<strong> Present</strong></li>
-                                        <li>2022-2025</li>
-                                        <li>2024</li>
-                                        <li>2023-2024</li>
-                                        <li>2022-2023</li>
-                                        <li>2021-2022</li>
-                                        <li>2020-2021</li>
-                                        <li>2013-2020</li>
-                                    </ul>
-                                </div>
-                            </div>
 
+                            <ul className="list-unstyled">
+                                {[
+                                    ["Curtin University Malaysia", "2024 - Present"],
+                                    ["Telemedicine", "2024 - Present"],
+                                    ["MiguelSa Psychology", "2017 - Present"],
+                                    ["Universidade Europeia", "2022-2025"],
+                                    ["SeaYourself", "2024"],
+                                    ["Hospital da Luz", "2023-2024"],
+                                    ["Rafa Nadal Academy", "2022-2023"],
+                                    ["Sporting CP", "2021-2022"],
+                                    ["FC Famalicão", "2020-2021"],
+                                    ["SL Benfica", "2013-2020"]
+                                ].map(([institution, period], index) => (
+                                    <li key={index} className="d-flex justify-content-between">
+                                        <span>{institution}</span>
+                                        <span>{period.includes("Present") ? (
+                                            <>
+                                                {period.split(" - ")[0]} - <strong>Present</strong>
+                                            </>
+                                        ) : period}</span>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
                 </div>
 
-                
+
+
                 <div className="mb-5 d-flex justify-content-evenly" style={{ alignItems: "center", paddingBottom: "40px" }}>
-                    <img src={certificado} onClick={() => setModalImg(certificado)} className="rounded float" alt="Certificado de registro como psicólogo clínico" style={{ width: "200px", height: "150px", border:"inset" }} />
+                    <img src={certificado} onClick={() => setModalImg(certificado)} className="rounded float" alt="Certificado de registro como psicólogo clínico" style={{ width: "200px", height: "150px", border: "inset" }} />
                     <img src={declaracion} onClick={() => setModalImg(declaracion)} className="rounded float" alt="Declaracion Orden de Psicologos" style={{ width: "200px", height: "150px", border: "ridge" }} />
                     <img src={registro} onClick={() => setModalImg(registro)} className="rounded float" alt="Registro EuroPsy Psicologo" style={{ width: "200px", height: "150px", border: "groove" }} />
 
