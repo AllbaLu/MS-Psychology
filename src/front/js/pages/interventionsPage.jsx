@@ -42,7 +42,7 @@ export const InterventionsPage = () => {
                         <div className="d-flex justify-content-center  " >
                             <ul className="list-unstyled" >
                                 <li className="list mb-3 mt-2" >
-                                    <i className="fa-solid fa-angles-right fa-sm mb-2" style={{color:" #63E6BE"}} ></i> <strong>Emotional Wellbeing : </strong> 
+                                    <i className="fa-solid fa-angles-right fa-sm mb-2" style={{color:" #63E6BE"}} ></i> <strong>Emotional Well-being : </strong> 
                                     Learn how to manage stress, anxiety and other emotions that may be affecting your daily life.
                                 </li>
                                 <li className="list mb-3">

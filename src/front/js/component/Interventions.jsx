@@ -9,7 +9,7 @@ const interventionsData = [
     {
         id:1,
         title: "Clinical Psychology",
-        description: "Through clinical psychology, you will be able to embark on a journey of personal discovry and growth. Through an ethical and responsible approach, we will be able to work through deep personal experiences and to build a renewed and empowered sense of self, so you can lead a happier life.",
+        description: "Through clinical psychology, you will be able to embark on a journey of personal discovery and growth. Through an ethical and responsible approach, we will be able to work through deep personal experiences and to build a renewed and empowered sense of self, so you can lead a happier life.",
         image: "https://cgei-ud.org/images/psicosensum/products/producto_5006_.png",
     },
     {

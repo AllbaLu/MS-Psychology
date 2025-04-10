@@ -21,7 +21,10 @@ body {
   margin-bottom: 50px;
   background: #f7fbff 
 }
-
+.navbar {
+	position: relative;
+	z-index: 10; /* o más alto */
+}
 
 .form-control {
   width: 470px;
