@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://miguelsapsychology.com/sitemap.xml

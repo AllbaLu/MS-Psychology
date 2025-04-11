@@ -22,7 +22,7 @@ export const About = () => {
                     <blockquote className="blockquote fs-4">
                         <p>About </p>
                     </blockquote>
-                    <figcaption className="blockquote-footer">
+                    <figcaption className="blockquote-footer ">
                         Dr. Miguel Sá
                     </figcaption>
                 </figure>
@@ -31,6 +31,7 @@ export const About = () => {
                 <div className="row g-0">
                     <div className="col-md-4 ">
                         <img src={foto}
+                            alt="Photo by Dr. Miguel Sá, Clinical Psychologist"
                             style={{ width: "300px", height: "250px", paddingLeft: "50px" }} />
                     </div>
                     <div className="col-md-8 bg-transparent ">

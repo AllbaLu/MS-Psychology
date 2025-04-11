@@ -94,7 +94,7 @@ export const ContactForm = () => {
                                         name="name"
                                         value={formData.name}
                                         onChange={handleEmail}
-                                        // placeholder="Full Name"
+
                                         required
                                         className="form-control"
                                     />
@@ -106,7 +106,7 @@ export const ContactForm = () => {
                                         name="email"
                                         value={formData.email}
                                         onChange={handleEmail}
-                                        // placeholder="Email"
+
                                         required
                                         className="form-control"
                                     />
@@ -117,7 +117,7 @@ export const ContactForm = () => {
                                         name="message"
                                         value={formData.message}
                                         onChange={handleEmail}
-                                        // placeholder="How can I help you?"
+
                                         required
                                         className="form-control"
                                     />
@@ -128,8 +128,7 @@ export const ContactForm = () => {
                     </div>
                     <div className="col-sm-6 col-md-5 col-lg-6">
                         <div className="mt-5 ">
-                            {/* <img src={image}
-                            style={{ minWidth: "70px", height: "40px" }} /> */}
+
                             <div className="img"
                                 style={{
                                     backgroundImage: `url(${image})`,
@@ -139,11 +138,9 @@ export const ContactForm = () => {
                                     width: "100%",
                                     minHeight: "40vh",
                                     display: "flex",
-                                    // justifyContent: "center",
-                                    // alignItems: "end",
-                                    // textAlign: "center"
-                                    //textDecorationLine: "overline",
+
                                 }}
+                                
                             >
                                 <div className="mx-2">
 

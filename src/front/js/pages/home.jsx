@@ -10,7 +10,7 @@ export const Home = () => {
 
 	return (
 		<div className="home position-relative h-100 d-flex flex-column justify-content-center">
-			<img src={image} alt="background" className="hero-background" />
+			<img src={image} alt="mentalHealth" className="hero-background" />
 
 			<div className="container-xxl text-center content-overlay">
 				<div className="mb-5 text-uppercase">
