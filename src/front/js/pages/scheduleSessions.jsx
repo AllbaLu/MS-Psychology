@@ -39,7 +39,7 @@ export const ScheduleSessions = () => {
             <div className="pay mb-5 p-5">
                 <div className="mb-5">
 
-                    {/* <PricingPage /> */}
+                <PricingPage /> 
                 </div>
                 
             </div>

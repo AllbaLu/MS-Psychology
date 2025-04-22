@@ -50,7 +50,7 @@ export const Navbar = () => {
 								</Link>
 								</li> */}
 								<li>
-								<Link  className=" dropdown-item visible-dropdown-item" to="/scheduleSessions">
+								<Link  className=" dropdown-item visible-dropdown-item" to="/packageSelection">
 									Full Session
 								</Link>
 								</li>
