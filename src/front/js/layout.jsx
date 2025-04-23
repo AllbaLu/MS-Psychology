@@ -39,7 +39,7 @@ const Layout = () => {
                             <Route element={<LoginPage />} path="/loginPage" />
                             <Route element={<ContactForm />} path="/contactForm" />
                             <Route element={<ScheduleSessions />} path="/scheduleSessions" />
-                            <Route  element={<PackageSelection />} path="/packageSelection" />
+                            <Route element={<PackageSelection />} path="/packageSelection" />
                             <Route  element={<CalendlyStripeRedirect />} path="/reserva" />
                             <Route  element={<PaidOneSession />} path="/payment-1" />
                             <Route  element={<PaidThreeSessions />} path="/payment-3" />

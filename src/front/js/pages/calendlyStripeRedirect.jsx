@@ -9,17 +9,18 @@ export const CalendlyStripeRedirect = () => {
   const sessionPackage = params.get("sessionPackage");
 
   useEffect(() => {
-    // Load Calendly script only once
-    const existingScript = document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]');
-    
-    if (!existingScript) {
+    // Carga el script de Calendly si aún no está en el documento
+    const scriptId = "calendly-widget-script";
+
+    if (!document.getElementById(scriptId)) {
       const script = document.createElement("script");
       script.src = "https://assets.calendly.com/assets/external/widget.js";
       script.async = true;
+      script.id = scriptId;
       document.body.appendChild(script);
     }
-  
-    // Listen for Calendly booking event
+
+    // Escuchar evento de sesión agendada
     const handler = (event) => {
       if (
         event.origin.includes("calendly.com") &&
@@ -28,11 +29,10 @@ export const CalendlyStripeRedirect = () => {
         navigate(sessionPackage === "3" ? "/payment-3" : "/payment-1");
       }
     };
-  
+
     window.addEventListener("message", handler);
     return () => window.removeEventListener("message", handler);
   }, [sessionPackage, navigate]);
-  
 
   return (
     <div className="p-8">
