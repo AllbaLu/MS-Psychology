@@ -121,7 +121,7 @@ export const About = () => {
 
 
 
-                <div className="mb-5 d-flex justify-content-evenly" style={{ alignItems: "center", paddingBottom: "40px" }}>
+                <div className="mb-3 d-flex justify-content-evenly" style={{ alignItems: "center", paddingBottom: "40px" }}>
                     <img src={certificado} onClick={() => setModalImg(certificado)} className="rounded float" alt="Certificado de registro como psicólogo clínico" style={{ width: "200px", height: "150px", border: "inset" }} />
                     <img src={declaracion} onClick={() => setModalImg(declaracion)} className="rounded float" alt="Declaracion Orden de Psicologos" style={{ width: "200px", height: "150px", border: "ridge" }} />
                     <img src={registro} onClick={() => setModalImg(registro)} className="rounded float" alt="Registro EuroPsy Psicologo" style={{ width: "200px", height: "150px", border: "groove" }} />
@@ -130,8 +130,21 @@ export const About = () => {
                 {modalImg && (
                     <div className="modal" onClick={() => setModalImg(null)}>
                         <img src={modalImg} alt="Imagen ampliada" />
+
+                        
                     </div>
                 )}
+                <div className= "mb-5 pb-2">
+                    <p className="text-center mb-5">
+                            <strong>Malaysian certifications in process </strong>
+                            <div className="spinner-border spinner-border-sm" role="status">
+                            <span className="visually-hidden">Loading...</span>
+                            </div>
+                            <div className="spinner-grow spinner-grow-sm" role="status">
+                            <span className="visually-hidden">Loading...</span>
+                            </div>
+                        </p>
+                </div>
                 <div className="card-footer mb-5">
 
                 </div>

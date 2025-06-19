@@ -15,7 +15,8 @@ export const Navbar = () => {
 				<div className="container-fluid">
 					
 					<h1 className="navbar-brand text-dark  ms-5" >
-							<img src={logo} 
+							<img src={logo}
+							alt="mentalHealth" 
 							width="180" height="90" /> 												
 					<p className="badge text-wrap text-dark " style={{width: "2rem", borderLeft: "solid"}}>
 						Mental Health Services
