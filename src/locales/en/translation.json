@@ -1,0 +1,34 @@
+{
+  "home": {
+    "title": "Miguel Sá Psychology",
+    "process": "The process of change",
+    "cta": "Start the process today!"
+  },
+  "navbar": {
+    "subtitle": "Mental Health Services",
+    "home": "Home",
+    "about": "About",
+    "interventions": "Interventions",
+    "contact": "Contact",
+    "schedule": "Schedule Sessions",
+    "fullSession": "Full Session"
+  },
+  "interventions": {
+    "title": "Interventions",
+    "caption": "Know more about services.",
+    "cards": [
+      {
+        "title": "Clinical Psychology",
+        "description": "Through clinical psychology, you will be able to embark on a journey of personal discovery and growth. Through an ethical and responsible approach, we will be able to work through deep personal experiences and to build a renewed and empowered sense of self, so you can lead a happier life."
+      },
+      {
+        "title": "Performance Psychology",
+        "description": "Inspired in my work with high-performance individuals (in sports, tech or finance), performance psychology aims you becoming the best version of yourself. If you are aware of your abilities and want to pursue personal and professional excellence, this is the place for you."
+      },
+      {
+        "title": "Psychology for teams and companies",
+        "description": "This service is tailored to groups of people who know they have to set themselves apart in an increasingly competitive market. Through motivational speaking or designed workshops, the goal is to help your team or company develop the strategies necessary to get to the next level."
+      }
+    ]
+  }
+}
