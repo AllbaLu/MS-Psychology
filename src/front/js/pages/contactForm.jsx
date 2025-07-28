@@ -10,6 +10,7 @@ import { useTranslation } from 'react-i18next';
 
 export const ContactForm = () => {
     const navigate = useNavigate();
+    
 
     const [formData, setFormData] = useState({
         name: '',

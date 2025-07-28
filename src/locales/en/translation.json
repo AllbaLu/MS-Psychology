@@ -30,5 +30,31 @@
         "description": "This service is tailored to groups of people who know they have to set themselves apart in an increasingly competitive market. Through motivational speaking or designed workshops, the goal is to help your team or company develop the strategies necessary to get to the next level."
       }
     ]
-  }
+  },
+  "about": {
+  "title": "About",
+  "name": "Dr. Miguel Sá",
+  "subtitle": "CLINICAL and PERFORMANCE | PSYCHOLOGIST and LECTURER",
+
+  "bio1": "Born in Portugal in 1989, I am a clinical and performance psychologist, having done my Bachelor in Psychological Sciences and my Master’s Degree in Clinical Psychology in ISPA University Institute, one of the oldest and most prestigious Psychology Schools in Portugal.",
+  "bio2": "After graduating in 2013, I have been pursuing my professional passions, in which I am actively involved: clinical psychology, performance psychology, and teaching, which I currently do at Curtin University Malaysia.",
+  "bio3": "My work as a clinical and performance psychologist is the result of over a decade of experience learning from different references in the field, and from the opportunity to learn and work in multicultural settings. My main goal as a therapist is to help people develop a deeper understanding of who they are, to be able to face their inner conflicts and challenges, and to help them develop healthier strategies so they can lead happier and more meaningful lives.",
+  "cta": "Are you ready to begin the process of change?",
+
+  "academicTitle": "Academic profile:",
+  "academic": {
+    "0": "Masters in Clinical Psychology - ISPA (2013)",
+    "1": "Postgraduation in Sport and Health Psychology - ISPA (2016)",
+    "2": "PhD in Clinical Psychology - Curtin University (2025) - to be started"
+  },
+
+  "professionalTitle": "Professional experience:",
+  "present": "Present",
+
+  "cert1Alt": "Registration certificate as clinical psychologist",
+  "cert2Alt": "Declaration from the Psychology Association",
+  "cert3Alt": "EuroPsy Registration Certificate",
+
+  "pendingCertifications": "Malaysian certifications in process"
+}
 }
