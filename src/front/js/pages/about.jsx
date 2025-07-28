@@ -5,6 +5,8 @@ import declaracion from "../../image/DeclaracOrdPsych.jpg"
 import registro from "../../image/regEuroPsy.jpg"
 import { useState } from "react"
 import "../../styles/about.css"
+import { useTranslation } from 'react-i18next';
+
 
 
 

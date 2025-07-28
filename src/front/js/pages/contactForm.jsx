@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import image from "../../image/agendar.png"
 import { ScheduleSessions } from "../pages/scheduleSessions";
+import { useTranslation } from 'react-i18next';
+
 
 
 

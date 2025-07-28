@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+
 
 export const CalendlyStripeRedirect = () => {
   const navigate = useNavigate();

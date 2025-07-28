@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import PricingPage from "./pricingPage";
+import { useTranslation } from 'react-i18next';
+
 
 
 

@@ -2,11 +2,14 @@ import { useContext } from "react";
 import { Context } from "../store/appContext";
 import "../../styles/home.css";
 import image from "../../image/iStock.jpg"
+import { useTranslation } from 'react-i18next';
+
 
 
 
 export const Home = () => {
 	const { store, actions } = useContext(Context);
+	const { t } = useTranslation();
 
 	return (
 		<div className="home position-relative h-100 d-flex flex-column justify-content-center">
@@ -25,9 +28,9 @@ export const Home = () => {
 					<div className="titulo text-highlight mt-4" style={{ paddingTop: "50px", marginTop: "190px", paddingBottom: "55px" }}
 					>
 						<h3 className="display-4 text-white mt-5 mb-2">
-							<strong>The process of change</strong>
+							<strong>{t("home.process")}</strong>
 						</h3>
-						<h4 className="text-white text-decoration-underline">Start the process today!</h4>
+						<h4 className="text-white text-decoration-underline">{t("home.cta")}</h4>
 					</div>
 				</div>
 			</div>
