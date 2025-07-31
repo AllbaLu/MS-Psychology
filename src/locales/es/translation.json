@@ -1,102 +1,102 @@
 {
   "home": {
-    "title": "Miguel Sá Psicólogo",
-    "process": "O processo de mudança",
-    "cta": "Comece o processo hoje mesmo!"
+    "title": "Miguel Sá Psychology",
+    "process": "El proceso de cambio",
+    "cta": "Comience el proceso hoy mismo.!"
   },
   "navbar": {
-    "subtitle": "Serviços de Saúde Mental",
-    "home": "Página inicial",
-    "about": "Sobre mim",
-    "interventions": "Intervenções",
+    "subtitle": "Servicios de salud mental",
+    "home": "Inicio",
+    "about": "Acerca de",
+    "interventions": "Intervenciones",
     "contact": "Contacto",
-    "schedule": "Agendar sessões",
-    "fullSession": "Sessão completa"
+    "schedule": "Programar sesiones",
+    "fullSession": "Sesión completa"
   },
   "interventions": {
-    "title": "Intervenções",
-    "caption": "Saiba mais sobre os serviços.",
+    "title": "Intervenciones",
+    "caption": "Más información sobre los servicios.",
     "cards": [
       {
-        "title": "Psicologia Clínica",
-        "description": "Através da psicologia clínica, poderá embarcar numa jornada de descoberta e crescimento pessoal. Através de uma abordagem ética e responsável, poderemos trabalhar experiências pessoais profundas e construir um sentido renovado e fortalecido de si mesmo, para que possa levar uma vida mais feliz."
+        "title": "Psicología Clínica",
+        "description": "A través de la psicología clínica, podrás embarcarte en un viaje de descubrimiento y crecimiento personal. Mediante un enfoque ético y responsable, podremos trabajar en experiencias personales profundas y construir un sentido renovado y empoderado de ti mismo, para que puedas llevar una vida más feliz."
       },
       {
-        "title": "Psicologia do desempenho",
-        "description": "Inspirada no meu trabalho com indivíduos de alto desempenho (nos esportes, tecnologia ou finanças), a psicologia do desempenho tem como objetivo ajudar você a se tornar a melhor versão de si mesmo. Se você está ciente das suas habilidades e deseja buscar a excelência pessoal e profissional, este é o lugar certo para você."
+        "title": "Psicología del Desempeño",
+        "description": "Inspirada en mi trabajo con personas de alto rendimiento (en el deporte, la tecnología o las finanzas), la psicología del rendimiento tiene como objetivo ayudarte a convertirte en la mejor versión de ti mismo. Si eres consciente de tus capacidades y deseas alcanzar la excelencia personal y profesional, este es el lugar ideal para ti."
       },
       {
-        "title": "Psicologia para equipas e empresas",
-        "description": "Este serviço é feito sob medida para grupos de pessoas que sabem que precisam se destacar em um mercado cada vez mais competitivo. Por meio de palestras motivacionais ou workshops personalizados, o objetivo é ajudar a sua equipa ou empresa a desenvolver as estratégias necessárias para chegar ao próximo nível."
+        "title": "Psicología para equipos y empresas",
+        "description": "Este servicio está diseñado para grupos de personas que saben que deben diferenciarse en un mercado cada vez más competitivo. A través de charlas motivacionales o talleres diseñados, el objetivo es ayudar a su equipo o empresa a desarrollar las estrategias necesarias para alcanzar el siguiente nivel."
       }
     ]
   },
   "about": {
-  "title": "Sobre mim",
+  "title": "Acerca de",
   "name": "Dr. Miguel Sá",
-  "subtitle": "CLÍNICO e DESEMPENHO | PSICÓLOGO e CONFERENCISTA",
+  "subtitle": "CLÍNICO y RENDIMIENTO | PSICÓLOGO y PROFESOR",
 
-  "bio1": "Nascido em Portugal em 1989, sou psicólogo clínico e do desempenho, tendo feito a minha licenciatura em Ciências Psicológicas e o meu mestrado em Psicologia Clínica no Instituto Universitário ISPA, uma das mais antigas e prestigiadas escolas de psicologia de Portugal.",
-  "bio2": "Depois de me formar em 2013, tenho seguido as minhas paixões profissionais, nas quais estou ativamente envolvido: psicologia clínica, psicologia do desempenho e ensino, que atualmente exerço na Curtin University Malaysia.",
-  "bio3": "O meu trabalho como psicólogo clínico e de desempenho é o resultado de mais de uma década de experiência, aprendendo com diferentes referências na área e com a oportunidade de aprender e trabalhar em ambientes multiculturais. O meu principal objetivo como terapeuta é ajudar as pessoas a desenvolver uma compreensão mais profunda de quem são, para que possam enfrentar os seus conflitos e desafios internos, e ajudá-las a desenvolver estratégias mais saudáveis para que possam levar uma vida mais feliz e significativa.",
-  "cta": "Está pronto para iniciar o processo de mudança?",
+  "bio1": "Nacido en Portugal en 1989, soy psicólogo clínico y del rendimiento, y he cursado la licenciatura en Ciencias Psicológicas y el máster en Psicología Clínica en el Instituto Universitario ISPA, una de las facultades de psicología más antiguas y prestigiosas de Portugal.",
+  "bio2": "Después de graduarme en 2013, he estado dedicándome a mis pasiones profesionales, en las que participo activamente: la psicología clínica, la psicología del rendimiento y la enseñanza, que actualmente ejerzo en la Universidad Curtin de Malasia.",
+  "bio3": "Mi trabajo como psicólogo clínico y del rendimiento es el resultado de más de una década de experiencia aprendiendo de diferentes referentes en el campo y de la oportunidad de aprender y trabajar en entornos multiculturales. Mi principal objetivo como terapeuta es ayudar a las personas a desarrollar una comprensión más profunda de quiénes son, para que puedan afrontar sus conflictos y retos internos, y ayudarles a desarrollar estrategias más saludables para que puedan llevar una vida más feliz y significativa.",
+  "cta": "¿Estás listo para comenzar el proceso de cambio?",
 
   "academicTitle": "Perfil académico:",
   "academic": {
-    "0": "Mestrado em Psicologia Clínica - ISPA (2013)",
-    "1": "Pós-graduação em Psicologia do Desporto e da Saúde - ISPA (2016)",
-    "2": "Doutorado em Psicologia Clínica - Curtin University (2025) - a ser iniciado"
+    "0": "Maestría en Psicología Clínica - ISPA (2013)",
+    "1": "Posgrado en Psicología del Deporte y la Salud - ISPA (2016)",
+    "2": "Doctorado en Psicología Clínica - Curtin University (2025) - por comenzar"
   },
 
-  "professionalTitle": "Experiência profissional:",
-  "present": "Presente",
+  "professionalTitle": "Experiencia profesional:",
+  "present": "Actualmente",
 
-  "cert1Alt": "Certificado de registo como psicólogo clínico",
-  "cert2Alt": "Declaração da Associação de Psicologia",
-  "cert3Alt": "Certificado de Registo EuroPsy",
+  "cert1Alt": "Certificado de registro como Psicólogo Clínico",
+  "cert2Alt": "Declaración de la Asociación de Psicología",
+  "cert3Alt": "Certificado de Registro EuroPsy",
 
-  "pendingCertifications": "Certificações da Malásia em processo"
+  "pendingCertifications": "Certificaciones de Malasia en trámite"
 },
 "interventionsPage": {
-  "title": "Como a psicologia pode ajudá-lo?",
-  "description": "A psicologia é uma ciência que estuda o comportamento humano e os processos mentais, oferecendo ferramentas para o autoconhecimento, o bem-estar emocional e o desenvolvimento pessoal. Com apoio profissional, pode identificar e transformar padrões, pensamentos e comportamentos que podem estar a afetar a sua vida.",
-  "cta": "A psicologia é para todos!",
+  "title": "¿Cómo puede ayudarte la psicología?",
+  "description": "La psicología es una ciencia que estudia el comportamiento humano y los procesos mentales, y ofrece herramientas para el autoconocimiento, el bienestar emocional y el desarrollo personal. Con apoyo profesional, puedes identificar y transformar patrones, pensamientos y comportamientos que pueden estar afectando tu vida.",
+  "cta": "La Psicología es para todos.!",
 
   "bullets": [
     {
-      "title": "Bem-estar emocional",
-      "text": "Aprenda a gerir o stress, a ansiedade e outras emoções que podem estar a afetar a sua vida diária."
+      "title": "Bienestar emocional",
+      "text": "Aprenda a manejar el estrés, la ansiedad y otras emociones que pueden estar afectando su vida cotidiana."
     },
     {
-      "title": "Autoconhecimento e crescimento pessoal",
-      "text": "Descubra os seus pontos fortes, áreas a melhorar e estratégias para alcançar a sua melhor versão."
+      "title": "Autoconocimiento y crecimiento personal",
+      "text": "Descubre tus puntos fuertes, áreas de mejora y estrategias para alcanzar tu mejor versión."
     },
     {
-      "title": "Sucesso académico e profissional",
-      "text": "Desenvolva competências de estudo, gestão do tempo e tomada de decisões para atingir os seus objetivos."
+      "title": "Éxito académico y profesional",
+      "text": "Desarrolla habilidades de estudio, gestión del tiempo y toma de decisiones para alcanzar tus objetivos."
     },
     {
-      "title": "Relacionamentos saudáveis",
-      "text": "Aprenda a comunicar-se de forma eficaz e a construir relações positivas em todas as áreas da sua vida."
+      "title": "Relaciones saludables",
+      "text": "Aprende a comunicarte de manera eficaz y a construir relaciones positivas en todos los ámbitos de tu vida."
     },
     {
-      "title": "Desempenho desportivo",
-      "text": "Melhore a sua concentração, confiança e resiliência para otimizar o seu desempenho nas competições."
+      "title": "Rendimiento deportivo",
+      "text": "Mejora tu concentración, confianza y resiliencia para optimizar tu rendimiento en las competiciones."
     }
   ],
 
   "valuesTitle": "Valores",
-  "valuesText": "Bondade, compaixão, abertura e inclusão. Esse é o verdadeiro valor da ciência da mudança terapêutica e do crescimento humano. A diversidade e as diferenças individuais nas várias formas como as pessoas vivem e experimentam a vida são verdadeiramente valorizadas como parte da experiência humana. E os seus valores, cultura, etnia, orientação sexual e fé serão sempre respeitados. Não pode haver crescimento no processo terapêutico sem compreender e valorizar o que o torna único.!"
+  "valuesText": "Amabilidad, compasión, apertura e inclusión. Ese es el verdadero valor de la ciencia del cambio terapéutico y el crecimiento humano. La diversidad y las diferencias individuales en las múltiples formas en que las personas viven y experimentan la vida se valoran verdaderamente como parte de la experiencia humana. Y tus valores, cultura, origen étnico, orientación sexual y fe siempre serán respetados. ¡No puede haber crecimiento en el proceso terapéutico sin comprender y valorar lo que te hace único!"
 },
 "contactForm":{
-  "title": "Contato",
-  "subtitle": "Escreva-me para obter mais informações sobre os serviços.",
-  "name": "Nome completo",
-  "email": "E-mail",
-  "cta": "Como posso ajudá-lo?",
+  "title": "Contacto",
+  "subtitle": "Escríbeme para obtener más información sobre los servicios.",
+  "name": "Nombre completo",
+  "email": "Email",
+  "cta": "¿En qué puedo ayudarle?",
   "action": "Enviar",
-  "caption": "Para agendar a sua primeira consulta ou solicitar uma consulta gratuita por telefone, clique aqui.:",
-  "schedule": "Agende uma sessão"
+  "caption": "Para programar su primera cita o solicitar una consulta telefónica gratuita, haga clic aquí:",
+  "schedule": "Programar una sesión"
 }
 }
 
