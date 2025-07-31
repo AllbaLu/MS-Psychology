@@ -2,12 +2,15 @@ import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import image from "../../image/agendar.png"
 import { ScheduleSessions } from "../pages/scheduleSessions";
+import { useTranslation } from 'react-i18next';
+
 
 
 
 
 export const ContactForm = () => {
     const navigate = useNavigate();
+    const {t} = useTranslation();
 
     const [formData, setFormData] = useState({
         name: '',
@@ -76,10 +79,10 @@ export const ContactForm = () => {
                 <div>
                     <figure className="text-center mt-4">
                         <blockquote className="blockquote fs-4">
-                            <p>Contact</p>
+                            <p>{t("contactForm.title")}</p>
                         </blockquote>
                         <figcaption className="blockquote-footer">
-                            Write me for more information about services.
+                            {t("contactForm.subtitle")}
                         </figcaption>
                     </figure>
                 </div>
@@ -88,7 +91,7 @@ export const ContactForm = () => {
                         <div className=" form-control d-flex  mt-1 bg-transparent border-0  " style={{ width: "250px" }} >
                             <form onSubmit={handleSubmit}  >
                                 <div>
-                                    Full Name
+                                    {t("contactForm.name")}
                                     <input
                                         type="text"
                                         name="name"
@@ -100,7 +103,7 @@ export const ContactForm = () => {
                                     />
                                 </div>
                                 <div>
-                                    Email
+                                    {t("contactForm.email")}
                                     <input
                                         type="email"
                                         name="email"
@@ -112,7 +115,7 @@ export const ContactForm = () => {
                                     />
                                 </div>
                                 <div>
-                                    How can I help you?
+                                    {t("contactForm.cta")}
                                     <textarea
                                         name="message"
                                         value={formData.message}
@@ -122,7 +125,7 @@ export const ContactForm = () => {
                                         className="form-control"
                                     />
                                 </div>
-                                <button type="submit" value="send" className="btn btn-outline-info ">Send</button>
+                                <button type="submit" value="send" className="btn btn-outline-info ">{t("contactForm.action")}</button>
                             </form>
                         </div>
                     </div>
@@ -145,9 +148,9 @@ export const ContactForm = () => {
                                 <div className="mx-2">
 
                                     <div className="text-white" style={{ textAlign: "justify" }}>
-                                        To schedule your first appointment or to request a free phone consultation click here:
+                                        {t("contactForm.caption")}
                                         <div className="text-center " style={{ mixBlendMode: "plus-lighter", border: "double" }}  >
-                                            <button onClick={handleEvent} type="button" className="btn btn-link" >Schedule a Session</button>
+                                            <button onClick={handleEvent} type="button" className="btn btn-link" >{t("contactForm.schedule")}</button>
 
                                         </div>
                                     </div>

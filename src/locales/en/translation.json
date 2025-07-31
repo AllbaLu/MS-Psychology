@@ -1,0 +1,102 @@
+{
+  "home": {
+    "title": "Miguel Sá Psychology",
+    "process": "El proceso de cambio",
+    "cta": "Comience el proceso hoy mismo.!"
+  },
+  "navbar": {
+    "subtitle": "Servicios de salud mental",
+    "home": "Inicio",
+    "about": "Acerca de",
+    "interventions": "Intervenciones",
+    "contact": "Contacto",
+    "schedule": "Programar sesiones",
+    "fullSession": "Sesión completa"
+  },
+  "interventions": {
+    "title": "Intervenciones",
+    "caption": "Más información sobre los servicios.",
+    "cards": [
+      {
+        "title": "Psicología Clínica",
+        "description": "A través de la psicología clínica, podrás embarcarte en un viaje de descubrimiento y crecimiento personal. Mediante un enfoque ético y responsable, podremos trabajar en experiencias personales profundas y construir un sentido renovado y empoderado de ti mismo, para que puedas llevar una vida más feliz."
+      },
+      {
+        "title": "Psicología del Desempeño",
+        "description": "Inspirada en mi trabajo con personas de alto rendimiento (en el deporte, la tecnología o las finanzas), la psicología del rendimiento tiene como objetivo ayudarte a convertirte en la mejor versión de ti mismo. Si eres consciente de tus capacidades y deseas alcanzar la excelencia personal y profesional, este es el lugar ideal para ti."
+      },
+      {
+        "title": "Psicología para equipos y empresas",
+        "description": "Este servicio está diseñado para grupos de personas que saben que deben diferenciarse en un mercado cada vez más competitivo. A través de charlas motivacionales o talleres diseñados, el objetivo es ayudar a su equipo o empresa a desarrollar las estrategias necesarias para alcanzar el siguiente nivel."
+      }
+    ]
+  },
+  "about": {
+  "title": "Acerca de",
+  "name": "Dr. Miguel Sá",
+  "subtitle": "CLÍNICO y RENDIMIENTO | PSICÓLOGO y PROFESOR",
+
+  "bio1": "Nacido en Portugal en 1989, soy psicólogo clínico y del rendimiento, y he cursado la licenciatura en Ciencias Psicológicas y el máster en Psicología Clínica en el Instituto Universitario ISPA, una de las facultades de psicología más antiguas y prestigiosas de Portugal.",
+  "bio2": "Después de graduarme en 2013, he estado dedicándome a mis pasiones profesionales, en las que participo activamente: la psicología clínica, la psicología del rendimiento y la enseñanza, que actualmente ejerzo en la Universidad Curtin de Malasia.",
+  "bio3": "Mi trabajo como psicólogo clínico y del rendimiento es el resultado de más de una década de experiencia aprendiendo de diferentes referentes en el campo y de la oportunidad de aprender y trabajar en entornos multiculturales. Mi principal objetivo como terapeuta es ayudar a las personas a desarrollar una comprensión más profunda de quiénes son, para que puedan afrontar sus conflictos y retos internos, y ayudarles a desarrollar estrategias más saludables para que puedan llevar una vida más feliz y significativa.",
+  "cta": "¿Estás listo para comenzar el proceso de cambio?",
+
+  "academicTitle": "Perfil académico:",
+  "academic": {
+    "0": "Maestría en Psicología Clínica - ISPA (2013)",
+    "1": "Posgrado en Psicología del Deporte y la Salud - ISPA (2016)",
+    "2": "Doctorado en Psicología Clínica - Curtin University (2025) - por comenzar"
+  },
+
+  "professionalTitle": "Experiencia profesional:",
+  "present": "Actualmente",
+
+  "cert1Alt": "Certificado de registro como Psicólogo Clínico",
+  "cert2Alt": "Declaración de la Asociación de Psicología",
+  "cert3Alt": "Certificado de Registro EuroPsy",
+
+  "pendingCertifications": "Certificaciones de Malasia en trámite"
+},
+"interventionsPage": {
+  "title": "¿Cómo puede ayudarte la psicología?",
+  "description": "La psicología es una ciencia que estudia el comportamiento humano y los procesos mentales, y ofrece herramientas para el autoconocimiento, el bienestar emocional y el desarrollo personal. Con apoyo profesional, puedes identificar y transformar patrones, pensamientos y comportamientos que pueden estar afectando tu vida.",
+  "cta": "La Psicología es para todos.!",
+
+  "bullets": [
+    {
+      "title": "Bienestar emocional",
+      "text": "Aprenda a manejar el estrés, la ansiedad y otras emociones que pueden estar afectando su vida cotidiana."
+    },
+    {
+      "title": "Autoconocimiento y crecimiento personal",
+      "text": "Descubre tus puntos fuertes, áreas de mejora y estrategias para alcanzar tu mejor versión."
+    },
+    {
+      "title": "Éxito académico y profesional",
+      "text": "Desarrolla habilidades de estudio, gestión del tiempo y toma de decisiones para alcanzar tus objetivos."
+    },
+    {
+      "title": "Relaciones saludables",
+      "text": "Aprende a comunicarte de manera eficaz y a construir relaciones positivas en todos los ámbitos de tu vida."
+    },
+    {
+      "title": "Rendimiento deportivo",
+      "text": "Mejora tu concentración, confianza y resiliencia para optimizar tu rendimiento en las competiciones."
+    }
+  ],
+
+  "valuesTitle": "Valores",
+  "valuesText": "Amabilidad, compasión, apertura e inclusión. Ese es el verdadero valor de la ciencia del cambio terapéutico y el crecimiento humano. La diversidad y las diferencias individuales en las múltiples formas en que las personas viven y experimentan la vida se valoran verdaderamente como parte de la experiencia humana. Y tus valores, cultura, origen étnico, orientación sexual y fe siempre serán respetados. ¡No puede haber crecimiento en el proceso terapéutico sin comprender y valorar lo que te hace único!"
+},
+"contactForm":{
+  "title": "Contacto",
+  "subtitle": "Escríbeme para obtener más información sobre los servicios.",
+  "name": "Nombre completo",
+  "email": "Email",
+  "cta": "¿En qué puedo ayudarle?",
+  "action": "Enviar",
+  "caption": "Para programar su primera cita o solicitar una consulta telefónica gratuita, haga clic aquí.:",
+  "schedule": "Programar una sesión"
+}
+}
+

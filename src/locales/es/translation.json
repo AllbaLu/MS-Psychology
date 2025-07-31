@@ -1,0 +1,102 @@
+{
+  "home": {
+    "title": "Miguel Sá Psicólogo",
+    "process": "O processo de mudança",
+    "cta": "Comece o processo hoje mesmo!"
+  },
+  "navbar": {
+    "subtitle": "Serviços de Saúde Mental",
+    "home": "Página inicial",
+    "about": "Sobre mim",
+    "interventions": "Intervenções",
+    "contact": "Contacto",
+    "schedule": "Agendar sessões",
+    "fullSession": "Sessão completa"
+  },
+  "interventions": {
+    "title": "Intervenções",
+    "caption": "Saiba mais sobre os serviços.",
+    "cards": [
+      {
+        "title": "Psicologia Clínica",
+        "description": "Através da psicologia clínica, poderá embarcar numa jornada de descoberta e crescimento pessoal. Através de uma abordagem ética e responsável, poderemos trabalhar experiências pessoais profundas e construir um sentido renovado e fortalecido de si mesmo, para que possa levar uma vida mais feliz."
+      },
+      {
+        "title": "Psicologia do desempenho",
+        "description": "Inspirada no meu trabalho com indivíduos de alto desempenho (nos esportes, tecnologia ou finanças), a psicologia do desempenho tem como objetivo ajudar você a se tornar a melhor versão de si mesmo. Se você está ciente das suas habilidades e deseja buscar a excelência pessoal e profissional, este é o lugar certo para você."
+      },
+      {
+        "title": "Psicologia para equipas e empresas",
+        "description": "Este serviço é feito sob medida para grupos de pessoas que sabem que precisam se destacar em um mercado cada vez mais competitivo. Por meio de palestras motivacionais ou workshops personalizados, o objetivo é ajudar a sua equipa ou empresa a desenvolver as estratégias necessárias para chegar ao próximo nível."
+      }
+    ]
+  },
+  "about": {
+  "title": "Sobre mim",
+  "name": "Dr. Miguel Sá",
+  "subtitle": "CLÍNICO e DESEMPENHO | PSICÓLOGO e CONFERENCISTA",
+
+  "bio1": "Nascido em Portugal em 1989, sou psicólogo clínico e do desempenho, tendo feito a minha licenciatura em Ciências Psicológicas e o meu mestrado em Psicologia Clínica no Instituto Universitário ISPA, uma das mais antigas e prestigiadas escolas de psicologia de Portugal.",
+  "bio2": "Depois de me formar em 2013, tenho seguido as minhas paixões profissionais, nas quais estou ativamente envolvido: psicologia clínica, psicologia do desempenho e ensino, que atualmente exerço na Curtin University Malaysia.",
+  "bio3": "O meu trabalho como psicólogo clínico e de desempenho é o resultado de mais de uma década de experiência, aprendendo com diferentes referências na área e com a oportunidade de aprender e trabalhar em ambientes multiculturais. O meu principal objetivo como terapeuta é ajudar as pessoas a desenvolver uma compreensão mais profunda de quem são, para que possam enfrentar os seus conflitos e desafios internos, e ajudá-las a desenvolver estratégias mais saudáveis para que possam levar uma vida mais feliz e significativa.",
+  "cta": "Está pronto para iniciar o processo de mudança?",
+
+  "academicTitle": "Perfil académico:",
+  "academic": {
+    "0": "Mestrado em Psicologia Clínica - ISPA (2013)",
+    "1": "Pós-graduação em Psicologia do Desporto e da Saúde - ISPA (2016)",
+    "2": "Doutorado em Psicologia Clínica - Curtin University (2025) - a ser iniciado"
+  },
+
+  "professionalTitle": "Experiência profissional:",
+  "present": "Presente",
+
+  "cert1Alt": "Certificado de registo como psicólogo clínico",
+  "cert2Alt": "Declaração da Associação de Psicologia",
+  "cert3Alt": "Certificado de Registo EuroPsy",
+
+  "pendingCertifications": "Certificações da Malásia em processo"
+},
+"interventionsPage": {
+  "title": "Como a psicologia pode ajudá-lo?",
+  "description": "A psicologia é uma ciência que estuda o comportamento humano e os processos mentais, oferecendo ferramentas para o autoconhecimento, o bem-estar emocional e o desenvolvimento pessoal. Com apoio profissional, pode identificar e transformar padrões, pensamentos e comportamentos que podem estar a afetar a sua vida.",
+  "cta": "A psicologia é para todos!",
+
+  "bullets": [
+    {
+      "title": "Bem-estar emocional",
+      "text": "Aprenda a gerir o stress, a ansiedade e outras emoções que podem estar a afetar a sua vida diária."
+    },
+    {
+      "title": "Autoconhecimento e crescimento pessoal",
+      "text": "Descubra os seus pontos fortes, áreas a melhorar e estratégias para alcançar a sua melhor versão."
+    },
+    {
+      "title": "Sucesso académico e profissional",
+      "text": "Desenvolva competências de estudo, gestão do tempo e tomada de decisões para atingir os seus objetivos."
+    },
+    {
+      "title": "Relacionamentos saudáveis",
+      "text": "Aprenda a comunicar-se de forma eficaz e a construir relações positivas em todas as áreas da sua vida."
+    },
+    {
+      "title": "Desempenho desportivo",
+      "text": "Melhore a sua concentração, confiança e resiliência para otimizar o seu desempenho nas competições."
+    }
+  ],
+
+  "valuesTitle": "Valores",
+  "valuesText": "Bondade, compaixão, abertura e inclusão. Esse é o verdadeiro valor da ciência da mudança terapêutica e do crescimento humano. A diversidade e as diferenças individuais nas várias formas como as pessoas vivem e experimentam a vida são verdadeiramente valorizadas como parte da experiência humana. E os seus valores, cultura, etnia, orientação sexual e fé serão sempre respeitados. Não pode haver crescimento no processo terapêutico sem compreender e valorizar o que o torna único.!"
+},
+"contactForm":{
+  "title": "Contato",
+  "subtitle": "Escreva-me para obter mais informações sobre os serviços.",
+  "name": "Nome completo",
+  "email": "E-mail",
+  "cta": "Como posso ajudá-lo?",
+  "action": "Enviar",
+  "caption": "Para agendar a sua primeira consulta ou solicitar uma consulta gratuita por telefone, clique aqui.:",
+  "schedule": "Agende uma sessão"
+}
+}
+
