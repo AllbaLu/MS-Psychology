@@ -31,29 +31,29 @@ export const InterventionsPage = () => {
                                 </h3>
                             </blockquote>
                         </figure>
-                        <div className="d-flex justify-content-center">
-                            <ul className="list-unstyled">
-                                <li className="list mb-3 mt-2">
+                        <div className="d-flex justify-content-center" >
+                            <ul className="list-unstyled ">
+                                <li className="list mb-3 mt-2" style={{textAlign: "justify"}}>
                                     <i className="fa-solid fa-angles-right fa-sm mb-2" style={{ color: "#63E6BE" }}></i>
                                     <strong>{t("interventionsPage.bullets.0.title")}: </strong>
                                     {t("interventionsPage.bullets.0.text")}
                                 </li>
-                                <li className="list mb-3">
+                                <li className="list mb-3" style={{textAlign: "justify"}}>
                                     <i className="fa-solid fa-angles-right fa-sm mb-2" style={{ color: "#63E6BE" }}></i>
                                     <strong>{t("interventionsPage.bullets.1.title")}: </strong>
                                     {t("interventionsPage.bullets.1.text")}
                                 </li>
-                                <li className="list mb-3">
+                                <li className="list mb-3" style={{textAlign: "justify"}}>
                                     <i className="fa-solid fa-angles-right fa-sm mb-2" style={{ color: "#63E6BE" }}></i>
                                     <strong>{t("interventionsPage.bullets.2.title")}: </strong>
                                     {t("interventionsPage.bullets.2.text")}
                                 </li>
-                                <li className="list mb-3">
+                                <li className="list mb-3" style={{textAlign: "justify"}}>
                                     <i className="fa-solid fa-angles-right fa-sm mb-2" style={{ color: "#63E6BE" }}></i>
                                     <strong>{t("interventionsPage.bullets.3.title")}: </strong>
                                     {t("interventionsPage.bullets.3.text")}
                                 </li>
-                                <li className="list mb-3">
+                                <li className="list mb-3" style={{textAlign: "justify"}}>
                                     <i className="fa-solid fa-angles-right fa-sm mb-2" style={{ color: "#63E6BE" }}></i>
                                     <strong>{t("interventionsPage.bullets.4.title")}: </strong>
                                     {t("interventionsPage.bullets.4.text")}

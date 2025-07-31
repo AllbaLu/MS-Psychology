@@ -8,20 +8,20 @@ export const Interventions = () => {
     const interventionsData = [
         {
             id: 1,
-            title: t("interventions.clinical.title"),
-            description: t("interventions.clinical.description"),
+            title: t("interventions.cards.0.title"),
+            description: t("interventions.cards.0.description"),
             image: "https://cgei-ud.org/images/psicosensum/products/producto_5006_.png",
         },
         {
             id: 2,
-            title: t("interventions.performance.title"),
-            description: t("interventions.performance.description"),
+            title: t("interventions.cards.1.title"),
+            description: t("interventions.cards.1.description"),
             image: `${img}`
         },
         {
             id: 3,
-            title: t("interventions.teams.title"),
-            description: t("interventions.teams.description"),
+            title: t("interventions.cards.2.title"),
+            description: t("interventions.cards.2.description"),
             image: "https://elplacerdelalectura.com/wp-content/uploads/2024/04/af33ae05-23b3-483a-a086-d693a175d8d9.jpg"
         }
     ];
