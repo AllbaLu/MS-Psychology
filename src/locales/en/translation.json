@@ -56,5 +56,47 @@
   "cert3Alt": "EuroPsy Registration Certificate",
 
   "pendingCertifications": "Malaysian certifications in process"
+},
+"interventionsPage": {
+  "title": "How can psychology help you?",
+  "description": "Psychology is a science that studies human behavior and mental processes, offering tools for self-knowledge, emotional well-being, and personal development. With professional support, you can identify and transform patterns, thoughts, and behaviors that may be affecting your life.",
+  "cta": "Psychology is for everyone!",
+
+  "bullets": [
+    {
+      "title": "Emotional Well-being",
+      "text": "Learn how to manage stress, anxiety and other emotions that may be affecting your daily life."
+    },
+    {
+      "title": "Self-knowledge and Personal Growth",
+      "text": "Discover strengths, areas of improvement and strategies to reach your best version."
+    },
+    {
+      "title": "Academic and Professional Success",
+      "text": "Develop study, time management and decision-making skills to achieve your goals."
+    },
+    {
+      "title": "Healthy Relationships",
+      "text": "Learn to communicate effectively and build positive relationships in all areas of your life."
+    },
+    {
+      "title": "Sports Performance",
+      "text": "Improve your concentration, confidence and resilience to optimise your performance in competitions."
+    }
+  ],
+
+  "valuesTitle": "Values",
+  "valuesText": "Kindness, compassion, openness, and inclusion. That is the true value of the science of therapeutic change and human growth. Diversity and individual differences in the many ways people live and experience life are truly valued as part of the human experience. And your values, culture, ethnicity, sexual orientation, and faith will always be respected. There can be no growth in the therapeutic process without understanding and valuing what makes you unique!"
+},
+"contactForm":{
+  "title": "Contact",
+  "subtitle": "Write me for more information about services.",
+  "name": "Full Name",
+  "email": "Email",
+  "cta": "How can I help you?",
+  "action": "Send",
+  "caption": "To schedule your first appointment or to request a free phone consultation click here:",
+  "schedule": "Schedule a Session"
 }
 }
+

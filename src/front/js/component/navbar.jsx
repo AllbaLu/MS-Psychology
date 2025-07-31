@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 export const Navbar = () => {
 	const navigate = useNavigate();
-	const { t } = useTranslation(); // ✅ hook de traducción
+	const { t } = useTranslation(); 
 
 	return (
 		<div className="container">
