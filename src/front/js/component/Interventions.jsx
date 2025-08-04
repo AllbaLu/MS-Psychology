@@ -34,7 +34,7 @@ export const Interventions = () => {
                         <p>{t("interventions.title")}</p>
                     </blockquote>
                     <figcaption className="blockquote-footer">
-                        {t("interventions.subtitle")}
+                        {t("interventions.caption")}
                     </figcaption>
                 </figure>
             </div>
