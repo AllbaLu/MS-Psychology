@@ -52,5 +52,4 @@ Project Status
 🔄 SEO & multilingual enhancements in progress
 🧪 New AI chatbot assistant coming soon
 
-## 📁 Project Structure
 
