@@ -31,7 +31,7 @@ app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USE_SSL'] = False
 app.config['MAIL_USERNAME'] = 'miguelsapsychology@gmail.com'
-app.config['MAIL_PASSWORD'] = 'faui xzlr jsyc bdju'
+app.config['MAIL_PASSWORD'] = 'unji sopa isxe ypnb'
 #app.config['MAIL_DEFAULT_SENDER'] = 'none'
 
 #mail
@@ -95,24 +95,33 @@ def serve_any_other_file(path):
 def send_email():
     body = request.get_json()
 
+    # Validar 
     if not body or not all(k in body for k in ("name", "email", "message")):
         return jsonify({"status": "Bad Request - Missing required fields"}), 400
 
-    name = body['name']
-    email = body['email']
-    message = body['message']
+    name = body["name"]
+    email = body["email"]
+    message = body["message"]
 
-    msg = Message(subject=f"New message from {name}",
-                  sender=email,
-                  recipients=['miguelsapsychology@gmail.com'],
-                  body=f"Name: {name}\nEmail: {email}\nMessage: {message}")
+    # IMPORTANT
+    msg = Message(
+        subject=f"New message from {name}",
+        sender=app.config['MAIL_USERNAME'],  
+        recipients=['miguelsapsychology@gmail.com'],  
+        body=f"Name: {name}\nEmail: {email}\nMessage: {message}"
+    )
+
     try:
         mail.send(msg)
         return jsonify({"status": "Email sent successfully"}), 200
+
     except Exception as e:
-        error_message = f"Error sending email:"
-        print(error_message)
-        return jsonify({"status": "Error sending email", "error": error_message}), 500
+        # show error 
+        print("Error sending email:", str(e))
+        return jsonify({
+            "status": "Error sending email",
+            "error": str(e)
+        }), 500
 
 
 

@@ -44,7 +44,7 @@ export const ContactForm = () => {
 
 
         try {
-            const response = await fetch("https://crispy-zebra-69vv45xwxpxp25rg-3001.app.github.dev/send_email", {
+            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/send_email`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
